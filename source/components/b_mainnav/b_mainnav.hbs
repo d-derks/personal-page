@@ -1,0 +1,15 @@
+---
+component: Mainnav
+---
+
+<nav class="b-mainnav">
+    <ul class="mainnav-list">
+        {{#each items}}
+            <li class="mainnav-item {{type}} ">
+                <a class="mainnav-item-inner" href="{{href}}">
+                    {{title}}
+                </a>
+            </li>
+        {{/each}}
+    </ul>
+</nav>

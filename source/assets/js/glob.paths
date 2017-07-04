@@ -1,0 +1,5 @@
+../../components/**/*.js
+./main-modules/**/*.js
+!../../**/*.lazy.js
+!../../**/*.customlazy.js
+!../../**/tests/**/*.js

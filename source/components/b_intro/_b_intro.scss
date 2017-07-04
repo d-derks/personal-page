@@ -1,0 +1,65 @@
+/*
+ * Component: Intro
+**********************************************************/
+
+
+// Variables
+//**********************************************************
+
+
+//----------------------------------------------------------
+
+.b-intro {
+    position: relative;
+    margin: auto;
+    width: 100%;
+}
+
+.intro-title {
+    @include rb-fluid-type-range (font-size, 115px, 430px, 414px, 2500px);
+    text-align: center;
+    font-family:'Josefin Sans', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 0.6;
+    color: $color-eggshell;
+
+    &::before {
+        @include rb-fluid-type-range (width, 250px, 950px, 414px, 2500px);
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 15.5%;
+        top: 34%;
+        background: $color-gradient-disco-ultra;
+        animation: colorchange 5000ms ease-in-out;
+        animation-iteration-count: infinite;
+
+        @keyframes colorchange
+        {
+            0%   {
+                background-position:calc(0% - 250px) center;
+            }
+            50%  {
+                background-position:calc(100% + 250px) center;
+            }
+            100%  {
+                background-position:calc(0% - 250px) center;
+            }
+        }
+    }
+}
+
+.intro-leadin {
+    @include rb-fluid-type-range (font-size, 10px, 36px, 414px, 2500px);
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $color-eggshell;
+}
+
+
+

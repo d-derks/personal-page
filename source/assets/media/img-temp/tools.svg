@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="-18 -18 50 50">
+  <defs>
+    <path id="a" d="M-.535-6.394l4.762 2.668L1.56-8.488l2.667-4.762-4.762 2.667-4.762-2.667 2.666 4.762-2.667 4.762z"/>
+  </defs>
+  <use xlink:href="#a" overflow="visible" fill-rule="evenodd" clip-rule="evenodd" fill="#E4E4E4"/>
+  <clipPath id="b">
+    <use xlink:href="#a" overflow="visible"/>
+  </clipPath>
+  <path clip-path="url(#b)" fill="#E4E4E4" d="M-14.82-22.774h28.57V5.798h-28.57z"/>
+  <g>
+    <defs>
+      <path id="e" d="M27.084-13.25l-4.762 2.667-4.76-2.667 2.665 4.762-2.666 4.762 4.762-2.668 4.762 2.668-2.668-4.762z"/>
+    </defs>
+    <use xlink:href="#e" overflow="visible" fill-rule="evenodd" clip-rule="evenodd" fill="#E4E4E4"/>
+    <clipPath id="f">
+      <use xlink:href="#e" overflow="visible"/>
+    </clipPath>
+    <path clip-path="url(#f)" fill="#E4E4E4" d="M8.036-22.774h28.57V5.798H8.037z"/>
+  </g>
+  <g>
+    <defs>
+      <path id="g" d="M10.512 7.32l-4-4 4.572-4.57 4 4-4.572 4.57zm2.095-10.475c-.762-.76-1.904-.76-2.666 0L-12.344 19.13c-.762.764-.762 1.905 0 2.668l4.38 4.38c.763.762 1.906.762 2.668 0L16.988 3.894c.762-.763.762-1.905 0-2.667l-4.38-4.38z"/>
+    </defs>
+    <use xlink:href="#g" overflow="visible" fill-rule="evenodd" clip-rule="evenodd" fill="#E4E4E4"/>
+    <clipPath id="h">
+      <use xlink:href="#g" overflow="visible"/>
+    </clipPath>
+    <path clip-path="url(#h)" fill="#E4E4E4" d="M-22.44-13.25h49.524v49.523H-22.44z"/>
+  </g>
+</svg>

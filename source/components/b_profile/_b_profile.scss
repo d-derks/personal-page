@@ -1,0 +1,72 @@
+/*
+ * Component: Profile
+**********************************************************/
+
+
+// Variables
+//**********************************************************
+
+
+//----------------------------------------------------------
+
+
+.b-profile {
+    padding-top: rb-rem-calc(100px);
+    width: 100%;
+
+    @media (max-width: 1600px) {
+        padding-top: 0;
+    }
+}
+
+.profile-inner {
+    position: relative;
+    padding: 0 10px;
+    max-width: 45%;
+
+    @media (max-width: 768px) {
+        max-width: 100%;
+    }
+}
+
+.profile-title {
+    @include rb-fluid-type-range (font-size, 50px, 110px, 414px, 1600px);
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    color: $color-pleasure;
+
+    & > .is-second-level {
+        display: block;
+    }
+
+    &::after {
+        @include rb-fluid-type-range (height, 30px, 70px, 414px, 1600px);
+        @include rb-fluid-type-range (bottom, -35px, -70px, 414px, 1600px);
+        @include rb-fluid-type-range (width, 5px, 8px, 414px, 1600px);
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background: $color-pleasure;
+    }
+}
+
+.profile-leadin {
+    @include rb-fluid-type-range (padding-top, 50px, 100px, 414px, 1600px);
+    @include fluid-copytext;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    color: $color-mouse-dead;
+}
+
+.profile-media {
+    position: absolute;
+    right: -17%;
+    width: 65%;
+    bottom: -3px;
+    opacity: 0.9;
+}

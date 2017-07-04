@@ -1,0 +1,51 @@
+/*
+ * Component: Cellcase
+**********************************************************/
+
+
+// Variables
+//**********************************************************
+
+
+//----------------------------------------------------------
+
+
+.b-cellcase {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5% 0;
+    width: 100%;
+}
+
+.cellcase-row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.cellcase-box {
+    position: relative;
+
+    @include rb-respond-to((to:m)) {
+        margin-bottom: rb-rem-calc(40px);
+    }
+
+    @include rb-respond-to((from: m, to:xl)) {
+        margin-bottom: rb-rem-calc(70px);
+    }
+
+    @include rb-respond-to((from: xl, to:xxl)) {
+        margin-bottom: rb-rem-calc(100px);
+    }
+
+    &.is-switched {
+        order: 2;
+    }
+
+        @media (max-width: 1090px) {
+            &:nth-child(2) {
+                order: 2;
+            }
+    }
+}
+

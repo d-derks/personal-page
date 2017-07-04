@@ -1,0 +1,12 @@
+{
+  "items": [
+    {
+      "type": "is-mail",
+      "href": "mailto:2debbiederks@gmail.com"
+    },
+    {
+      "type": "is-phone",
+      "href": "tel:+4917678903509"
+    }
+  ]
+}

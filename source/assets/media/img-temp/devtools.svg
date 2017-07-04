@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="devtools" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="400px" height="348px" viewBox="0 27.5 400 348" enable-background="new 0 27.5 400 348" xml:space="preserve">
+<path id="tang_1_" fill="#E4E4E4" d="M225,300.5v-180c15-8.5,25-24.75,25-43.5c0-18.25-10-34.25-25-43v34.5l-25,13.25L175,68.5V34
+	c-15,8.75-25,24.75-25,43.25s10,34.5,25,43.25v180c-7.75,6.75-12.5,16.75-12.5,28c0,20.75,16.75,37.5,37.5,37.5
+	s37.5-16.75,37.5-37.5C237.5,317.5,232.75,307.5,225,300.5z M205,347.5l-18.75-5.75l-4.5-19L196,309.5l18.75,5.75l4.5,19L205,347.5z
+	"/>
+<polygon id="bracked-left" fill="#E4E4E4" points="125,117.75 0,166.5 0,216.75 125,267.25 125,230 37.5,192.5 125,155 "/>
+<g id="bracked-right">
+	<polygon fill="#E4E4E4" points="275,117.75 400,166.5 400,216.75 275,267.25 275,230 362.5,192.5 275,155 	"/>
+</g>
+</svg>

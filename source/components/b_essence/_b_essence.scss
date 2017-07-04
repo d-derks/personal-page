@@ -1,0 +1,47 @@
+/*
+ * Component: Essence
+**********************************************************/
+
+
+// Variables
+//**********************************************************
+
+
+//----------------------------------------------------------
+
+
+.b-essence {
+    padding-left: rb-rem-calc(50px);
+    width: 100%;
+    text-align: right;
+
+    @media (max-width: 1130px) {
+        padding-left: rb-rem-calc(50px);
+        text-align: left;
+
+    }
+
+    @media (max-width: 1090px) {
+        margin-bottom: rb-rem-calc(50px);
+
+        }
+}
+
+.essence-subtitle {
+    @include rb-fluid-type-range (font-size, 32px, 56px, 414px, 2500px);
+    margin-bottom: rb-rem-calc(20px);
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.essence-list {
+    margin-bottom: rb-rem-calc(35px);
+}
+
+.essence-list-item {
+    @include rb-fluid-type-range (font-size, 16px, 32px, 414px, 2500px);
+    font-family:'Josefin Sans';
+    line-height: 1.7;
+    text-transform: uppercase;
+    color: $color-mouse;
+}

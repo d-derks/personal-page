@@ -1,0 +1,116 @@
+{
+  "code": {
+    "topic": "Code",
+    "type": "is-code",
+    "img": "/assets/media/img-temp/code.svg",
+    "alt": "code icon",
+    "items": [
+      {
+        "title": "Html",
+        "type": "is-code",
+        "img": "/assets/media/img-temp/html.svg",
+        "alt": "Html5 icon",
+        "position":"is-pos-right",
+        "text": "Clear and well-structured component based coding"
+      },
+      {
+        "title": "SASS",
+        "type": "is-code",
+        "img": "/assets/media/img-temp/sass.svg",
+        "alt": "SASS icon",
+        "position":"is-pos-left",
+        "text": "Absolutely crazy about Sass, makes life more easy"
+      },
+      {
+        "title": "Javascript",
+        "type": "is-code",
+        "img": "/assets/media/img-temp/js.svg",
+        "alt": "javascript icon",
+        "position":"is-pos-right",
+        "text": "Made my first steps into the world of JS"
+      },
+      {
+        "title": "JQuery",
+        "type": "is-code",
+        "img": "/assets/media/img-temp/jquery.svg",
+        "alt": "Jquery icon",
+        "position":"is-pos-left",
+        "text": "Use this library when neccesary"
+      },
+      {
+        "title": "CSS",
+        "type": "is-code",
+        "img": "/assets/media/img-temp/css.svg",
+        "alt": "CSS icon",
+        "position":"is-pos-right",
+        "text": "Always try to find out the limits of its possibilities"
+      },
+      {
+        "title": "PHP",
+        "type": "is-code",
+        "img": "/assets/media/img-temp/php.svg",
+        "alt": "PHP icon",
+        "position":"is-pos-right",
+        "text": "Knowledge of PHP fundamentals"
+      }
+    ]
+  },
+  "tools": {
+    "topic": "Tools",
+    "type": "is-tools",
+    "img": "/assets/media/img-temp/devtools.svg",
+    "alt": "tools icon",
+    "items": [
+      {
+        "title": "Git",
+        "type": "is-tools",
+        "img": "/assets/media/img-temp/git.svg",
+        "alt": "Git icon",
+        "position":"is-pos-right",
+        "text": "for corporation and backing up"
+      },
+      {
+        "title": "Gulp",
+        "type": "is-tools",
+        "img": "/assets/media/img-temp/gulp.svg",
+        "alt": "gulp icon",
+        "position":"is-pos-left",
+        "text": "Use this task manager to easy-up"
+      }
+    ]
+  },
+  "design": {
+    "topic": "Design",
+    "position": "is-pos-right",
+    "type": "is-design",
+    "img": "/assets/media/img-temp/design.svg",
+    "alt": "design icon",
+    "angle": "is-turned-left",
+    "items": [
+      {
+        "title": "Illustrator",
+        "type": "is-design",
+        "angle": "is-turned-right",
+        "img": "/assets/media/img-temp/illustrator.svg",
+        "alt": "illustrator icon",
+        "text": "Vector images are just the bomb!"
+      },
+      {
+        "title": "Sketch",
+        "type": "is-design",
+        "angle": "is-turned-right",
+        "img": "/assets/media/img-temp/sketch.svg",
+        "alt": "sketch icon",
+        "text": "Absolutely perfect for responsive design"
+      },
+      {
+        "title": "Photoshop",
+        "type": "is-design",
+        "angle": "is-turned-right",
+        "img": "/assets/media/img-temp/photoshop.svg",
+        "alt": "photoshop icon",
+        "text": "Great to create and measure out designs"
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+@mixin fluid-copytext($font-familiy: $font-sans-serif) {
+    font: 400 rb-rem-calc(18px)/1.6 $font-familiy;
+
+    @include rb-respond-to(xs) {
+        font-size: rb-rem-calc(14px);
+    }
+
+    @include rb-respond-to((from:s,to:l)) {
+        @include rb-fluid-type-range(font-size, 14px, 21px, 600px, 1440px);
+    }
+
+    @include rb-respond-to(xl) {
+        @include rb-fluid-type-range(font-size, 21px, 28px, 1441px, 1920px);
+    }
+
+    @include rb-respond-to(xxl) {
+        font-size: rb-rem-calc(31px);
+    }
+}

@@ -1,0 +1,21 @@
+/*
+ * Component: Pageinfo
+**********************************************************/
+
+
+// Variables
+//**********************************************************
+
+
+//----------------------------------------------------------
+
+
+.b-pageinfo {
+    padding: rb-rem-calc(20px 0 30px);
+}
+
+.pageinfo-copywright {
+    @include fluid-copytext;
+    font-family: "Century Gothic", sans-serif;
+    color: $color-mouse-dead;
+}

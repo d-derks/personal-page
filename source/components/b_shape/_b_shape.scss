@@ -1,0 +1,79 @@
+/*
+ * Component: Shape
+**********************************************************/
+
+
+// Variables
+//**********************************************************
+
+
+//----------------------------------------------------------
+
+
+.b-shape {
+
+    &.is-stripe {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 300px;
+        box-shadow: 0 30px 50px #fff;
+    }
+
+    &.is-cirkel {
+        @include rb-fluid-type-range (width, 150px, 700px, 350px, 1600px);
+        @include rb-fluid-type-range (height, 150px, 700px, 350px, 1600px);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        border-radius: 50%;
+        background: $color-pleasure;
+        box-shadow: 0 30px 50px $color-pleasure-deep;
+        transform: translate3d(-300px,-100px,0);
+
+        @include rb-respond-to((to:s)) {
+            transform: translate3d(-120px,-60px,0);
+        }
+    }
+
+}
+
+.shape-dept-1 {
+
+    &.is-cirkel {
+        @include rb-fluid-type-range (width, 100px, 500px, 350px, 1600px);
+        @include rb-fluid-type-range (height, 100px, 500px, 350px, 1600px);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        border-radius: 50%;
+        background: $color-pleasure;
+        box-shadow: 0 30px 50px $color-pleasure-deep;
+    }
+}
+
+.shape-dept-2 {
+
+    &.is-cirkel {
+        @include rb-fluid-type-range (width, 50px, 300px, 350px, 1600px);
+        @include rb-fluid-type-range (height, 50px, 300px, 350px, 1600px);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        border-radius: 50%;
+        background: $color-pleasure;
+        box-shadow: 0 30px 50px $color-pleasure-deep;
+    }
+}

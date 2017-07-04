@@ -1,0 +1,87 @@
+---
+title: Startpagina
+layout: default_tpl.hbs
+---
+<div class="page-intro is-bg-universe">
+    <div class="page-intro-inner">
+{{#with b_intro}}
+    {{> b_intro }}
+{{/with}}
+    </div>
+</div>
+<div class="page-section-bottomarrow">
+    <svg class="page-section-bottomarrow-inner" viewBox="0 -120.2 1439.75 240.7">
+        <path fill="rgba(25,23,31,1)" d="M719.82 120.5l719.93-240.2-717-.5L0-119.7"/>
+    </svg>
+</div>
+<main class="page-main">
+    <div class="page-section is-bg-stone" id="who">
+        <div class="page-section-inner">
+            {{#with b_subheader.who}}
+                {{> b_subheader }}
+            {{/with}}
+            {{#with b_profile}}
+                {{> b_profile }}
+            {{/with}}
+        </div>
+    </div>
+    <div class="page-section">
+        <div class="page-section-inner">
+            {{#with b_subheader.what}}
+                {{> b_subheader }}
+            {{/with}}
+            <div class="b-cellcase">
+                <div class="cellcase-row">
+                    <div class="cellcase-box u-size-50 u-size-100-lte-m is-switched">
+                        {{#with b_essence}}
+                            {{> b_essence }}
+                        {{/with}}
+                    </div>
+                    <div class="cellcase-box u-size-50 u-size-100-lte-m">
+                        {{#with b_itemset.code}}
+                            {{> b_itemset }}
+                        {{/with}}
+                    </div>
+                </div>
+                <div class="cellcase-row">
+                    <div class="cellcase-box u-size-50 u-size-100-lte-m is-bottom-padded">
+                        {{#with b_itemset.tools}}
+                            {{> b_itemset }}
+                        {{/with}}
+                    </div>
+                    <div class="cellcase-box u-size-50 u-size-100-lte-m">
+                        {{#with b_itemset.design}}
+                            {{> b_itemset }}
+                        {{/with}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-section is-bg-pleasure">
+        <div class="page-section-inner is-pos-centered">
+            <div class="b-shape is-cirkel">
+                <div class="shape-dept-1 is-cirkel">
+                    <div class="shape-dept-2 is-cirkel">
+                    </div>
+                </div>
+            </div>
+            {{#with b_contact}}
+                {{> b_contact }}
+            {{/with}}
+        </div>
+    </div>
+</main>
+<footer class="page-footer">
+    <div class="page-footer-inner">
+        {{#with b_pageinfo}}
+            {{> b_pageinfo }}
+        {{/with}}
+    </div>
+</footer>
+
+
+
+
+
+

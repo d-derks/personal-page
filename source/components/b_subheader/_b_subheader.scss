@@ -1,0 +1,45 @@
+/*
+ * Component: Subheader
+**********************************************************/
+
+
+// Variables
+//**********************************************************
+
+
+//----------------------------------------------------------
+
+.b-subheader {
+
+    &.is-pos-left {
+        position: absolute;
+        top: 35%;
+        left: -19%;
+        transform: rotate(90deg);
+
+        @media (max-width: 1080px) {
+            top: 12%;
+            left: -25%;
+        }
+    }
+
+    &.is-pos-right {
+        position: absolute;
+        top: 26%;
+        right: -13%;
+        transform: rotate(90deg);
+    }
+
+    &.is-vanish-smallscreen {
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+}
+
+.subheader-title {
+    @include rb-fluid-type-range (font-size, 160px, 260px, 1128px, 2500px);
+    text-transform: uppercase;
+    font-family:'Josefin Sans', sans-serif;
+    color: $color-bright;
+}
