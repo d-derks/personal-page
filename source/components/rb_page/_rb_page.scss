@@ -19,20 +19,21 @@
     background: $color-eggshell;
 }
 
-//Main wrapper page
+//wrapper page
 .page-wrapper {
     overflow-x: hidden;
     margin: auto;
+    padding-top: rb-rem-calc(70px);
     width: 100%;
 }
 
-//Main header page
+//header page
 .page-header {
     position: fixed;
     top: 0;
     width: 100%;
     border-bottom: 1px solid $color-eggshell;
-    background: $color-universe;
+    background: $color-jeans;
     z-index: $z-pageheader;
 
     &::before {
@@ -51,32 +52,28 @@
     display: flex;
 }
 
+// intro page
+
 .page-intro {
     position: relative;
     width: 100%;
 
-    &.is-bg-universe {
-        background: $color-gradient-universe;
+    &.is-bg-bright {
+        background: $color-jeans;
     }
 }
 
 .page-intro-inner {
-    @include rb-fluid-type-range (min-height, 500px, 1350px, 414px, 2500px);
     display: flex;
     width: 100%;
+    height: 93.5vh;
+    @include rb-respond-to((to:xs)) {
+        height: 73vh;
+    }
 }
 
-.page-section-bottomarrow {
-    background: $color-stone;
-}
+//Main content
 
-.page-section-bottomarrow-inner {
-    position: relative;
-    top: -1px;
-    overflow: hidden;
-}
-
-//Main content page
 .page-main {
     width: 100%;
 }
@@ -85,6 +82,15 @@
     position: relative;
     width: 100%;
     background-color: $color-eggshell;
+    overflow: hidden;
+
+    @include rb-respond-to((to:m)) {
+        padding:rb-rem-calc(0 50px);
+    }
+
+    @include rb-respond-to((from: m)) {
+        padding: rb-rem-calc(0 100px);
+    }
 
     &.is-bg-stone {
         background: $color-stone;
@@ -94,20 +100,27 @@
         background: $color-gradient-universe;
     }
 
-    &.is-bg-pleasure {
-        background: $color-pleasure;
+    &.is-bg-poppy {
+        background: $color-lollypop;
+    }
+
+    &.is-bg-enlightened {
+        background: $color-brighter;
+        padding: 0;
     }
 }
 
 .page-section-inner {
-    @include rb-fluid-type-range (max-width, 280px, 1800px, 320px, 2500px);
-    @include rb-fluid-type-range (min-height, 450px, 1350px, 320px, 2500px);
     padding-top: rb-rem-calc(100px);
     position: relative;
     margin: auto;
+    max-width: rb-rem-calc(2000px);
 
-    &.is-width-full {
-        max-width: 100%;
+    &.is-height-special {
+        height: 90vh;
+        @include rb-respond-to((to:xs)) {
+            height: 70vh;
+        }
     }
 
     @media (max-width: 768px) {
@@ -118,9 +131,28 @@
         padding-top: 0;
         display: flex;
     }
+
+    &.is-bottomarrow {
+        padding-top: 0;
+        top: -1px;
+        overflow: hidden;
+        max-width: 100%;
+    }
+
+    &.is-width-fully {
+        max-width: 100%;
+    }
 }
 
-//Main footer page
+.section-box {
+    &.is-profile {
+        margin-left: auto;
+        width: 55%;
+        opacity: 0.9;
+    }
+}
+
+// footer page
 
 .page-footer {
     width: 100%;

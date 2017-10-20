@@ -26,10 +26,6 @@
 .cellcase-box {
     position: relative;
 
-    @include rb-respond-to((to:m)) {
-        margin-bottom: rb-rem-calc(40px);
-    }
-
     @include rb-respond-to((from: m, to:xl)) {
         margin-bottom: rb-rem-calc(70px);
     }
@@ -46,6 +42,9 @@
             &:nth-child(2) {
                 order: 2;
             }
+    }
+    &.is-special {
+        z-index: 0;
     }
 }
 

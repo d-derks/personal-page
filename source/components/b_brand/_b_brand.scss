@@ -1,0 +1,30 @@
+/*
+ * Component: Brand
+**********************************************************/
+
+
+// Variables
+//**********************************************************
+
+
+//----------------------------------------------------------
+
+
+.b-brand {
+    margin: auto 0;
+}
+
+.brand-inner {
+    display: block;
+    padding: rb-rem-calc(0 20px);
+}
+
+.brand-logo {
+    width: rb-rem-calc(200px);
+    fill: $color-eggshell;
+
+    @media (max-width: 414px) {
+        width: rb-rem-calc(100px);
+    }
+}
+

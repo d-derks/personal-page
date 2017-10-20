@@ -2,11 +2,11 @@
   "items": [
     {
       "type": "about",
-      "title": "about",
+      "title": "About",
       "href": "#who"
     },
     {
-      "title": "contact",
+      "title": "Contact",
       "href": "#contact"
     }
   ]

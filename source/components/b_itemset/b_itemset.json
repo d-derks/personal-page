@@ -19,7 +19,7 @@
         "img": "/assets/media/img-temp/sass.svg",
         "alt": "SASS icon",
         "position":"is-pos-left",
-        "text": "Absolutely crazy about Sass, makes life more easy"
+        "text": "Use SASS for to work faster and cleaner"
       },
       {
         "title": "Javascript",
@@ -43,7 +43,7 @@
         "img": "/assets/media/img-temp/css.svg",
         "alt": "CSS icon",
         "position":"is-pos-right",
-        "text": "Always try to find out the limits of its possibilities"
+        "text": "Try to develop as much as I can in this area"
       },
       {
         "title": "PHP",

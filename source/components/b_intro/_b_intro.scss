@@ -12,28 +12,30 @@
 .b-intro {
     position: relative;
     margin: auto;
+    padding: rb-rem-calc(110px 0);
     width: 100%;
 }
 
 .intro-title {
-    @include rb-fluid-type-range (font-size, 115px, 430px, 414px, 2500px);
+    @include rb-fluid-type-range (font-size, 130px, 430px, 350px, 2500px);
+    position: relative;
     text-align: center;
     font-family:'Josefin Sans', sans-serif;
     font-weight: 600;
     text-transform: uppercase;
     line-height: 0.6;
-    color: $color-eggshell;
+    color: $color-lollypop;
 
     &::before {
-        @include rb-fluid-type-range (width, 250px, 950px, 414px, 2500px);
+        @include rb-fluid-type-range (width, 285px, 950px, 414px, 2500px);
         content: '';
         position: absolute;
         left: 0;
         right: 0;
         margin: auto;
-        height: 15.5%;
-        top: 34%;
-        background: $color-gradient-disco-ultra;
+        height: 17.5%;
+        top: 37.5%;
+        background: $color-gradient-poppyglow;
         animation: colorchange 5000ms ease-in-out;
         animation-iteration-count: infinite;
 
@@ -53,7 +55,8 @@
 }
 
 .intro-leadin {
-    @include rb-fluid-type-range (font-size, 10px, 36px, 414px, 2500px);
+    @include rb-fluid-type-range (font-size, 12px, 36px, 414px, 2500px);
+    display: block;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;

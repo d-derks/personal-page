@@ -31,8 +31,16 @@ setTimeout(()=> {
 });
 
 if (document.fonts && document.fonts.forEach) {
-    document.fonts.forEach(function(font){
-        font.load();
+    const loadFonts = [];
+
+    document.fonts.forEach((font) => {
+        loadFonts.push(font);
     });
+
+    setTimeout(()=>{
+        loadFonts.forEach((font) => {
+            font.load();
+        });
+    }, 0);
 }
 

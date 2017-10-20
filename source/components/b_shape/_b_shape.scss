@@ -11,49 +11,53 @@
 
 
 .b-shape {
-
-    &.is-stripe {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 300px;
-        box-shadow: 0 30px 50px #fff;
-    }
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 
     &.is-cirkel {
-        @include rb-fluid-type-range (width, 150px, 700px, 350px, 1600px);
-        @include rb-fluid-type-range (height, 150px, 700px, 350px, 1600px);
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
         margin: auto;
         border-radius: 50%;
-        background: $color-pleasure;
-        box-shadow: 0 30px 50px $color-pleasure-deep;
-        transform: translate3d(-300px,-100px,0);
 
-        @include rb-respond-to((to:s)) {
-            transform: translate3d(-120px,-60px,0);
+        &.is-shady {
+            @include rb-fluid-type-range (width, 600px, 1000px, 350px, 1600px);
+            @include rb-fluid-type-range (height, 600px, 1000px, 350px, 1600px);
+            background: $color-bright;
+            box-shadow: 0 30px 40px $color-eggshell;
+            transform: translate3d(-100px, -50px,0);
+            z-index: 0;
+            overflow: hidden;
         }
+
+        &.is-lollypop {
+            @include rb-fluid-type-range (width, 150px, 700px, 350px, 1600px);
+            @include rb-fluid-type-range (height, 150px, 700px, 350px, 1600px);
+            background: $color-pleasure;
+            box-shadow: 0 10px 50px $color-pleasure-deep;
+            transform: translate3d(-300px,-100px,0);
+
+            @include rb-respond-to((to:s)) {
+                transform: translate3d(-120px,-60px,0);
+            }
+        }
+
+
     }
 
 }
 
 .shape-dept-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 
     &.is-cirkel {
         @include rb-fluid-type-range (width, 100px, 500px, 350px, 1600px);
         @include rb-fluid-type-range (height, 100px, 500px, 350px, 1600px);
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
         margin: auto;
         border-radius: 50%;
         background: $color-pleasure;
@@ -62,15 +66,15 @@
 }
 
 .shape-dept-2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 
     &.is-cirkel {
         @include rb-fluid-type-range (width, 50px, 300px, 350px, 1600px);
         @include rb-fluid-type-range (height, 50px, 300px, 350px, 1600px);
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
         margin: auto;
         border-radius: 50%;
         background: $color-pleasure;

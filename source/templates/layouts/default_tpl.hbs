@@ -4,6 +4,7 @@
         {{> meta_data }}
         {{> app_icons }}
         {{> head_assets }}
+        {{> fonts_assets }}
 
         {{#or component styleguide}}
             {{!-- Styles only used in documentation component not live site --}}
@@ -16,15 +17,12 @@
 
             <header class="page-header" role="banner">
                 <div class="page-header-inner u-column-group u-gutters-horizontal">
-                    {{#with b_sidenav}}
-                        {{> b_sidenav }}
-                    {{/with}}
+                    {{> b_brand}}
                     {{#with b_mainnav}}
-                        {{> b_mainnav }}
+                        {{> b_mainnav}}
                     {{/with}}
                 </div>
             </header>
-
             <main class="page-main" id="main-content" role="main" tabindex="-1">
                 {% body %}
             </main>

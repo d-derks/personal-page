@@ -11,6 +11,7 @@
 .b-contact {
     position: relative;
     margin: auto;
+    padding: rb-rem-calc(190px 0);
     width: 100%;
 }
 
@@ -21,24 +22,25 @@
 }
 
 .contact-title {
-    @include rb-fluid-type-range (font-size, 50px, 110px, 414px, 1600px);
+    @include rb-fluid-type-range (font-size, 40px, 110px, 350px, 1600px);
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Century Gothic', sans-serif;
-    font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
     color: $color-eggshell;
+    z-index: 0;
 }
 
 .contact-title-exclamationpoint {
     position: relative;
 
     &::after {
-        @include rb-fluid-type-range (width, 10px, 30px, 414px, 2500px);
-        @include rb-fluid-type-range (height, 10px, 30px, 414px, 2500px);
+        @include rb-fluid-type-range (width, 8px, 28px, 350px, 2500px);
+        @include rb-fluid-type-range (height, 8px, 28px, 350px, 2500px);
         content: '';
         position: absolute;
         right: 0;
-        bottom: 16%;
+        bottom: 20%;
         left: 0;
         margin: auto;
         border-radius: 50%;
@@ -51,8 +53,9 @@
 }
 
 .contact-list-item {
-    @include rb-fluid-type-range (font-size, 17px, 43px, 414px, 1600px);
-    font-family: 'century gothic', sans-serif;
+    @include rb-fluid-type-range (font-size, 18px, 36px, 414px, 1600px);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
 }
 
 .contact-list-item-inner {
@@ -62,6 +65,6 @@
     transition: 350ms color ease-out;
 
     &:hover {
-        color: $color-mouse-dead;
+        color: $color-piggy;
     }
 }

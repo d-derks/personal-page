@@ -1,14 +1,18 @@
 {
   "who": {
-    "type": "is-pos-right is-vanish-smallscreen",
+    "type": "is-essence",
     "title": "Who"
   },
-  "what":{
-    "type": "is-pos-left",
-    "title": "What"
+  "code":{
+    "type": "is-code",
+    "title": "Technologies I use"
   },
-  "where": {
-    "type": "is-pos-right",
-    "title": "Where"
+  "design": {
+    "type": "is-design",
+    "title": "Design programs I work with"
+  },
+    "tools": {
+      "type": "is-tools",
+      "title": "Tools I"
   }
 }
