@@ -23,8 +23,12 @@
     width: rb-rem-calc(200px);
     fill: $color-eggshell;
 
-    @media (max-width: 414px) {
-        width: rb-rem-calc(100px);
+    @include rb-respond-to((to:xs)) {
+        width: rb-rem-calc(130px);
+    }
+
+    @media (max-width: 350px) {
+        width: rb-rem-calc(65px);
     }
 }
 

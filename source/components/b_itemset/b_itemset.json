@@ -67,7 +67,7 @@
         "img": "/assets/media/img-temp/git.svg",
         "alt": "Git icon",
         "position":"is-pos-right",
-        "text": "for corporation and backing up"
+        "text": "use Git for corporation and backing up"
       },
       {
         "title": "Gulp",
@@ -101,7 +101,7 @@
         "angle": "is-turned-right",
         "img": "/assets/media/img-temp/sketch.svg",
         "alt": "sketch icon",
-        "text": "Absolutely perfect for responsive design"
+        "text": "Use sketch for my designs"
       },
       {
         "title": "Photoshop",
@@ -109,7 +109,7 @@
         "angle": "is-turned-right",
         "img": "/assets/media/img-temp/photoshop.svg",
         "alt": "photoshop icon",
-        "text": "Great to create and measure out designs"
+        "text": "here I measure out the designs"
       }
     ]
   }
