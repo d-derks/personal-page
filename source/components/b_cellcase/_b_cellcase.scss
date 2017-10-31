@@ -21,6 +21,12 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
+    &.is-small-marginbottom {
+        @include rb-respond-to((to:s)) {
+            margin-bottom: rb-rem-calc(50px);
+        }
+    }
 }
 
 .cellcase-box {
@@ -42,9 +48,6 @@
             &:nth-child(2) {
                 order: 2;
             }
-    }
-    &.is-special {
-        z-index: 0;
     }
 }
 

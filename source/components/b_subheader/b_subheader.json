@@ -3,16 +3,9 @@
     "type": "is-essence",
     "title": "Who"
   },
-  "code":{
-    "type": "is-code",
-    "title": "Technologies I use"
-  },
-  "design": {
-    "type": "is-design",
-    "title": "Design programs I work with"
-  },
-    "tools": {
-      "type": "is-tools",
-      "title": "Tools I"
+  "tech":{
+    "type": "is-tech",
+    "title": "I work with",
+    "text": "The following technologies are the tools and programs I work with. I believe that with every new project it is a possibility to challenge myself and develop in these areas and also learn new programs."
   }
 }

@@ -34,13 +34,16 @@ layout: default_tpl.hbs
                     {{/with}}
                 </div>
                 <div class="cellcase-box u-size-50 u-size-100-lte-m">
+                    {{#with b_subheader.tech}}
+                        {{> b_subheader }}
+                    {{/with}}
                     {{#with b_itemset.code}}
                         {{> b_itemset }}
                     {{/with}}
                 </div>
             </div>
-            <div class="cellcase-row">
-                <div class="cellcase-box u-size-50 u-size-100-lte-m is-special">
+            <div class="cellcase-row is-small-marginbottom">
+                <div class="cellcase-box u-size-50 u-size-100-lte-m">
                     {{#with b_itemset.tools}}
                         {{> b_itemset }}
                     {{/with}}

@@ -16,7 +16,7 @@
         display: flex;
         width: 100%;
         height: 100%;
-        min-height: rb-rem-calc(600px);
+        min-height: rb-rem-calc(500px);
         z-index: $z-itemset;
     }
 
@@ -71,21 +71,6 @@
         &.is-tools {
 
             &::before {
-                @include rb-respond-to((from:l)) {
-                content: '';
-                position: absolute;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
-                margin: auto;
-                border-radius: 50%;
-                background: $color-bright;
-                border: 1px solid #e3e3e3;
-                box-shadow: 5px -5px 60px $color-stone;
-                z-index: -5;
-                overflow: hidden;
-                }
 
                 @include rb-respond-to((from: m)) {
                     width: rb-rem-calc(600px);
@@ -117,10 +102,6 @@
                     background: url("/assets/media/img-temp/toolsBgGraphicLarge.svg") no-repeat;
                 }
             }
-
-            @media(max-width: 1128px) {
-                min-height: rb-rem-calc(250px);
-            }
         }
 
     &.is-pos-right {
@@ -146,12 +127,23 @@
 
 .itemset-topic-title {
     @include rb-respond-to((to:s)) {
-        @include rb-fluid-type-range (font-size, 58px, 68px, 320px, 768px);
-        margin: rb-rem-calc(10px 0);
-        font-family:'Josefin Sans', sans-serif;
-        font-weight: 600;
+        @include rb-fluid-type-range (font-size, 20px, 28px, 320px, 768px);
+        position: relative;
+        margin-bottom: rb-rem-calc(10px);
+        font-family:'Montserrat', sans-serif;
+        font-weight: 300;
         text-transform: uppercase;
-        color: #fff;
+        color: $color-mouse;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            height: rb-rem-calc(2px);
+            width: 20px;
+            background: $color-mouse;
+        }
     }
     @include rb-respond-to((from:m)) {
         @include rb-fluid-type-range (font-size, 18px, 24px, 768px, 2500px);
@@ -197,6 +189,12 @@
 
 .itemset-list {
 
+    @include rb-respond-to((to:s)) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: rb-rem-calc( 0 -3px 10px -3px);
+    }
+
     @include rb-respond-to((from:m)) {
         position: absolute;
         top: 0;
@@ -216,8 +214,8 @@
 
 .itemset-list-item {
 
-    @include rb-respond-to((to: s)) {
-        margin-bottom: rb-rem-calc(30px);
+    @include rb-respond-to((to:s)) {
+        margin: 3px;
     }
 
     @include rb-respond-to((from: m)) {
@@ -301,7 +299,7 @@
             height: rb-rem-calc(74px);
             border-radius: 50%;
             background: $color-universe;
-            box-shadow: 0 0 0 2px $color-bright, 0 0 0 10px $color-mouse-dead;
+            box-shadow: 0 0 0 2px $color-bright, 0 0 0 15px $color-mouse;
             transition: transform 700ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
     }
@@ -336,11 +334,9 @@
     @include rb-respond-to((to:s)) {
         flex: none;
         padding: rb-rem-calc(10px);
-        width: rb-rem-calc(60px);
-        height: rb-rem-calc(60px);
-        background: $color-universe;
-        border-radius: 50%;
-        box-shadow: 0 0 0 2px $color-bright, 0 0 0 10px $color-mouse-dead;
+        width: rb-rem-calc(80px);
+        height: rb-rem-calc(80px);
+        background: $color-mouse;
     }
 
     @include rb-respond-to((from: m, to:l)) {
@@ -368,8 +364,15 @@
 }
 
 .itemset-list-item-texbox {
-    @include rb-respond-to((to:s)){
-        display: flex;
+    @include rb-respond-to((to:s)) {
+        position: absolute;
+        clip: rect(1px, 1px, 1px, 1px);
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        width: 1px;
+        height: 1px ;
+        overflow: hidden;
     }
     @include rb-respond-to((from:m)) {
         position: relative;
@@ -451,7 +454,6 @@
         font-size: rb-rem-calc(17px);
         color: #fff;
     }
-
     @include rb-respond-to((from:xl)) {
         font-size: rb-rem-calc(24px);
     }
