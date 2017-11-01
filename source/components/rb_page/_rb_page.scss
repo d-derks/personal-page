@@ -16,6 +16,8 @@
 .rb-page {
     position: relative;
     overflow-y: scroll;
+    font-smooth: auto;
+    -webkit-font-smoothing: antialiased;
     background: $color-eggshell;
 }
 
@@ -85,7 +87,7 @@
     overflow: hidden;
 
     @include rb-respond-to((to:m)) {
-        padding:rb-rem-calc(0 50px);
+        padding:rb-rem-calc(0 30px);
     }
 
     @include rb-respond-to((from: m)) {

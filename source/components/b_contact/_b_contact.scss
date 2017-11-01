@@ -11,7 +11,7 @@
 .b-contact {
     position: relative;
     margin: auto;
-    padding: rb-rem-calc(190px 0);
+    padding: rb-rem-calc(150px 0);
     width: 100%;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .contact-title {
-    @include rb-fluid-type-range (font-size, 40px, 110px, 350px, 1600px);
+    @include rb-fluid-type-range (font-size, 70px, 170px, 350px, 2500px);
     text-align: center;
     text-transform: uppercase;
     font-family: 'Josefin Sans', sans-serif;
@@ -35,12 +35,12 @@
     position: relative;
 
     &::after {
-        @include rb-fluid-type-range (width, 8px, 28px, 350px, 2500px);
-        @include rb-fluid-type-range (height, 8px, 28px, 350px, 2500px);
+        @include rb-fluid-type-range (width, 12px, 28px, 320px, 2500px);
+        @include rb-fluid-type-range (height, 12px, 28px, 320px, 2500px);
         content: '';
         position: absolute;
         right: 0;
-        bottom: 20%;
+        bottom: 21%;
         left: 0;
         margin: auto;
         border-radius: 50%;

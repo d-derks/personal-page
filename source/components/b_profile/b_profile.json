@@ -1,5 +1,5 @@
 {
-  "default": {
-    "data": "Hello, I'm Profile"
-  }
+  "titleLevel1": "Debbie",
+  "titleLevel2":"Derks",
+  "text": "Female frontend web developer born and raised in the Netherlands. Currently living in the vibrant heart of Berlin, Kreuzberg."
 }

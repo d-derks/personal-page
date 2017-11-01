@@ -17,4 +17,7 @@
 .pageinfo-copywright {
     font: 200 16px/1.5 'Montserrat', sans-serif;
     color: $color-bright;
+    @include rb-respond-to((to:xs)) {
+        font-size: rb-rem-calc(12px);
+    }
 }

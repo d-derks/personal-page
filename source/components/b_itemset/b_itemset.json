@@ -3,7 +3,7 @@
     "topic": "Code",
     "type": "is-code",
     "img": "/assets/media/img-temp/code.svg",
-    "alt": "code icon",
+    "alt": "code",
     "items": [
       {
         "title": "Html",
@@ -17,7 +17,7 @@
         "title": "SASS",
         "type": "is-code",
         "img": "/assets/media/img-temp/sass.svg",
-        "alt": "SASS icon",
+        "alt": "SASS",
         "position":"is-pos-left",
         "text": "Use SASS for to work faster and cleaner"
       },
@@ -25,7 +25,7 @@
         "title": "Javascript",
         "type": "is-code",
         "img": "/assets/media/img-temp/js.svg",
-        "alt": "javascript icon",
+        "alt": "javascript",
         "position":"is-pos-right",
         "text": "Made my first steps into the world of JS"
       },
@@ -33,7 +33,7 @@
         "title": "JQuery",
         "type": "is-code",
         "img": "/assets/media/img-temp/jquery.svg",
-        "alt": "Jquery icon",
+        "alt": "Jquery",
         "position":"is-pos-left",
         "text": "Use this library when neccesary"
       },
@@ -41,7 +41,7 @@
         "title": "CSS",
         "type": "is-code",
         "img": "/assets/media/img-temp/css.svg",
-        "alt": "CSS icon",
+        "alt": "CSS",
         "position":"is-pos-right",
         "text": "Try to develop as much as I can in this area"
       },
@@ -49,7 +49,7 @@
         "title": "PHP",
         "type": "is-code",
         "img": "/assets/media/img-temp/php.svg",
-        "alt": "PHP icon",
+        "alt": "PHP",
         "position":"is-pos-right",
         "text": "Knowledge of PHP fundamentals"
       }
@@ -59,13 +59,13 @@
     "topic": "Tools",
     "type": "is-tools",
     "img": "/assets/media/img-temp/devtools.svg",
-    "alt": "tools icon",
+    "alt": "tools",
     "items": [
       {
         "title": "Git",
         "type": "is-tools",
         "img": "/assets/media/img-temp/git.svg",
-        "alt": "Git icon",
+        "alt": "Git",
         "position":"is-pos-right",
         "text": "use Git for corporation and backing up"
       },
@@ -73,7 +73,7 @@
         "title": "Gulp",
         "type": "is-tools",
         "img": "/assets/media/img-temp/gulp.svg",
-        "alt": "gulp icon",
+        "alt": "gulp",
         "position":"is-pos-left",
         "text": "Use this task manager to easy-up"
       }
@@ -84,7 +84,7 @@
     "position": "is-pos-right",
     "type": "is-design",
     "img": "/assets/media/img-temp/design.svg",
-    "alt": "design icon",
+    "alt": "design",
     "angle": "is-turned-left",
     "items": [
       {
@@ -92,7 +92,7 @@
         "type": "is-design",
         "angle": "is-turned-right",
         "img": "/assets/media/img-temp/illustrator.svg",
-        "alt": "illustrator icon",
+        "alt": "illustrator",
         "text": "Vector images are just the bomb!"
       },
       {
@@ -100,7 +100,7 @@
         "type": "is-design",
         "angle": "is-turned-right",
         "img": "/assets/media/img-temp/sketch.svg",
-        "alt": "sketch icon",
+        "alt": "sketch",
         "text": "Use sketch for my designs"
       },
       {
@@ -108,8 +108,8 @@
         "type": "is-design",
         "angle": "is-turned-right",
         "img": "/assets/media/img-temp/photoshop.svg",
-        "alt": "photoshop icon",
-        "text": "here I measure out the designs"
+        "alt": "photoshop",
+        "text": "Use photoshop to measure out designs"
       }
     ]
   }

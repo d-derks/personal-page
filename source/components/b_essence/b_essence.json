@@ -1,22 +1,14 @@
 {
-  "what": {
-    "list": [
-      {
-        "subTitle": "Hello",
-        "item": [
-          "Studied several corners of design",
-          "Absolutely thrilled about the creation process",
-          "Thrives to find the perfect balance between the beauty of simplicity and functionality"
-        ]
-      },
-      {
-        "item": [
-          "Accessible Websites",
-          "Component based development",
-          "Responsive design",
-          "User-centered Design"
-        ]
-      }
-    ]
-  }
+  "title": "Who I am",
+  "paragraph": [
+    {
+      "text": "During the last 10 years I have studied several different areas of design. I love the process of converting a design into an actual product. I believe a good website should be user-friendly."
+    },
+    {
+      "text": "I build component based websites. In this way a website is build to last. I take care that a website is accesible for a wide set of audience."
+    },
+    {
+      "text": "I build websites from scratch or with popular frameworks like bootstrap and foundation for to work faster. If nexeded a CMS can be added to the website. I work with programs like Wordpress or Silverstripe."
+    }
+  ]
 }

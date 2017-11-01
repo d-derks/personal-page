@@ -20,7 +20,7 @@
 }
 
 .mainnav-item {
-    @include rb-fluid-type-range (font-size, 14px, 28px, 320px, 2500px);
+    @include rb-fluid-type-range (font-size, 18px, 28px, 320px, 2500px);
     position: relative;
     width: 100%;
     text-align: center;

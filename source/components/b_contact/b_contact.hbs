@@ -4,10 +4,11 @@ component: Contact
 
 <section class="b-contact" id="contact">
    <div class="contact-inner">
-       <h2 class="contact-title">Say hello<span class="contact-title-exclamationpoint">!</span></h2>
+       <h2 class="contact-title">{{title}}<span class="contact-title-exclamationpoint">!</span></h2>
        <ul class="contact-list">
-           <li class="contact-list-item"><a class="contact-list-item-inner" href="mailto:2debbiederks@gmail.com">2debbiederks@gmail.com</a></li>
-           <li class="contact-list-item"><a class="contact-list-item-inner" href="tel:+4917678903509">+49 (0) 176 789 03 509</a></li>
+           {{#each item}}
+           <li class="contact-list-item"><a class="contact-list-item-inner" href="{{link}}">{{text}}</a></li>
+          {{/each}}
        </ul>
    </div>
 </section>

@@ -27,22 +27,26 @@
     }
 
     @include rb-respond-to((from:m)) {
-        margin-left: rb-rem-calc(30px);
+        padding-left: rb-rem-calc(30px);
     }
 }
 
 .essence-textbox-title {
     @include rb-fluid-type-range (font-size, 26px, 36px, 320px, 768px);
     position: relative;
-    margin-bottom: rb-rem-calc(40px);
+    margin-bottom: rb-rem-calc(30px);
     text-transform: uppercase;
     font-family:'Montserrat', sans-serif;
     color: $color-petrol;
 
+    @include rb-respond-to((from: xxl)) {
+        margin-bottom: rb-rem-calc(50px);
+    }
+
     &::after {
         content: '';
         position: absolute;
-        bottom: -12px;
+        bottom: -15px;
         left: 0;
         height: rb-rem-calc(6px);
         width: 40px;
@@ -50,17 +54,12 @@
     }
 }
 
-.essence-list {
-    margin-bottom: rb-rem-calc(35px);
-    padding-left: 20px;
-}
-
 .essence-textbox-text {
-    @include rb-fluid-type-range (font-size, 12px, 24px, 320px, 2500px);
-    margin-bottom: rb-rem-calc(20px);
+    @include rb-fluid-type-range (font-size, 18px, 28px, 320px, 2500px);
+    margin-bottom: 6%;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    line-height: 1.5;
+    font-weight: 400;
+    line-height: 1.4;
     color: $color-mouse;
 }
 
