@@ -34,13 +34,13 @@
     padding: rb-rem-calc(20px);
     text-decoration: none;
     color: $color-eggshell;
-    transition: color 0.5s;
+    transition: color 500ms;
     transition-timing-function: cubic-bezier(0.2,1,0.3,1);
     cursor: pointer;
 
     &:hover,
     &:focus {
-        color: $color-piggy;
+        color: $color-lollypop;
 
         .mainnav-item-link-inner::after {
                 transform: scale3d(1,1,1);

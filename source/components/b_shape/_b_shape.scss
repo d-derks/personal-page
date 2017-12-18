@@ -26,11 +26,7 @@
             @include rb-fluid-type-range (height, 200px, 1000px, 320px, 2500px);
             background: $color-pleasure;
             box-shadow: 0 10px 30px $color-pleasure-deep;
-            transform: translate3d(-300px,-60px,0);
-
-            @include rb-respond-to((to:s)) {
-                transform: translate3d(-130px,-60px,0);
-            }
+            transform: translate3d(-110%,0,0);
         }
 
 

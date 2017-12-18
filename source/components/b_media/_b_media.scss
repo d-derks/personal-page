@@ -13,47 +13,92 @@
     position: relative;
     width: 100%;
 
-    &.is-square {
+    &:before {
+        content: "";
+        display: block;
+        padding-top: 100%;
+    }
+
+    &.is-bottomarrow {
+
+        &:before {
+            content: "";
+            display: block;
+            padding-top: 17%;
+        }
+    }
+
+    &.is-profile {
+
+        &:before {
+            content: "";
+            display: block;
+            padding-top: 90%;
+        }
+    }
+
+    @include rb-respond-to((from:m)) {
+        &.is-fade-out {
+            transition: all 250ms ease-out;
+            .itemset-list-item:hover & {
+                transform: scale(0);
+                opacity: 0;
+            }
+        }
+    }
+
+    &.is-office {
+
+        z-index: 0;
+
         &:before {
             content: "";
             display: block;
             padding-top: 100%;
         }
-        @include rb-respond-to((from:m)) {
-            &.is-fade-out {
-                transition: all 250ms ease-out;
-                .itemset-list-item:hover & {
-                    transform: scale(0);
-                    opacity: 0;
-                }
-            }
-        }
     }
 
-    &.is-padded-small {
-        &:before {
-            content: "";
-            display: block;
-            padding-top: 18%;
-        }
-    }
-
-    &.is-profile {
-        margin-left: auto;
-        width: 55%;
-        opacity: 0.9;
+    &.is-macbook-svg {
 
         &:before {
             content: "";
             display: block;
-            padding-top: 66.5%;
+            padding-top: 90%;
         }
     }
 
+    &.is-macbook-img {
+        position: absolute;
+        top: 0;
+        z-index: -1;
 
+        &:before {
+            content: "";
+            display: block;
+            padding-top: 56%;
+        }
+    }
+    &.is-screen-svg {
+
+        &:before {
+            content: "";
+            display: block;
+            padding-top: 70%;
+        }
+    }
+    &.is-screen-img {
+        position: absolute;
+        top: 0;
+
+        &:before {
+            content: "";
+            display: block;
+            padding-top: 53%;
+        }
+    }
 }
 
-.media-img {
+.media-img, .media-svg {
     position:  absolute;
     top: 0;
     left: 0;
@@ -61,4 +106,26 @@
     right: 0;
     max-width: 100%;
     width: 100%;
+    height: 100%;
+
+    &.is-profile {
+        fill: $color-universe;
+    }
+
+    &.is-bottomarrow {
+        top: -3px;
+    }
+
+    &.is-macbook-img {
+        margin: auto;
+        width: 84%;
+        z-index: -1;
+    }
+
+    &.is-screen-img {
+        z-index: -1;
+    }
 }
+
+
+

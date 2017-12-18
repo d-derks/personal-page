@@ -99,7 +99,7 @@
                 @include rb-respond-to((from:xl)) {
                     width: rb-rem-calc(454px);
                     height: rb-rem-calc(336px);
-                    background: url("/assets/media/img-temp/toolsBgGraphicLarge.svg") no-repeat;
+                        background: url("/assets/media/img-temp/toolsBgGraphicLarge.svg") no-repeat;
                 }
             }
         }
@@ -119,9 +119,9 @@
         width: rb-rem-calc(100px);
         height: rb-rem-calc(100px);
         border-radius: 50%;
-        background: $color-mouse-dead;
+        background: $color-universe;
         border: 2px solid #fff;
-        box-shadow: 0 0 0 25px $color-mouse;
+        box-shadow: 0 0 0 25px $color-mouse-old;
     }
     @include rb-respond-to((from:xl)) {
         width: rb-rem-calc(120px);
@@ -137,7 +137,7 @@
         font-family:'Montserrat', sans-serif;
         font-weight: 400;
         text-transform: uppercase;
-        color: $color-mouse;
+        color: $color-universe+30;
 
         &::after {
             content: '';
@@ -146,7 +146,7 @@
             left: 0;
             height: rb-rem-calc(2px);
             width: 20px;
-            background: $color-mouse;
+            background: $color-universe+30;
         }
     }
     @include rb-respond-to((from:m)) {
@@ -158,9 +158,9 @@
         text-align: center;
         font-family: "Century Gothic", sans-serif;
         text-transform: uppercase;
-        background: $color-eggshell;
         box-shadow: 0 0 0 5px $color-mouse-old;
         color: $color-mouse-old;
+        background: $color-eggshell;
         z-index: $z-itemset-topic-title;
     }
 }
@@ -217,6 +217,7 @@
 }
 
 .itemset-list-item {
+    cursor: pointer;
 
     @include rb-respond-to((to:s)) {
         margin: 3px;
@@ -302,8 +303,8 @@
             width: rb-rem-calc(74px);
             height: rb-rem-calc(74px);
             border-radius: 50%;
-            background: $color-mouse-dead;
-            box-shadow: 0 0 0 2px $color-bright, 0 0 0 15px $color-mouse;
+            background: $color-universe;
+            box-shadow: 0 0 0 2px $color-bright, 0 0 0 15px $color-mouse-old;
             transition: transform 700ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
         @include rb-respond-to((from:xl)) {
@@ -344,7 +345,7 @@
         padding: rb-rem-calc(10px);
         width: rb-rem-calc(80px);
         height: rb-rem-calc(80px);
-        background: $color-mouse;
+        background: $color-universe+30;
     }
 
     @include rb-respond-to((from: m)) {
@@ -420,6 +421,7 @@
         position: relative;
         width: 100%;
         margin: auto;
+        align-self: center;
     }
 }
 

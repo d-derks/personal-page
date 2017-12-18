@@ -11,6 +11,7 @@
 
 
 .b-profile {
+    position: relative;
     padding-top: rb-rem-calc(100px);
     width: 100%;
 
@@ -21,11 +22,16 @@
 
 .profile-inner {
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
     padding: 0 10px;
-    max-width: 45%;
+    z-index: 2;
+}
 
-    @media (max-width: 768px) {
-        max-width: 100%;
+.profile-textbox {
+    width: 45%;
+    @include rb-respond-to((to:s)) {
+        width: 100%;
     }
 }
 
@@ -67,6 +73,17 @@
     }
 }
 
+.profile-img {
+    position: absolute;
+    top: 0;
+    right: 250px;
+    bottom: 0;
+    left: 0;
+    margin-left:auto;
+    width: 70px;
+    border-radius: 50%;
+}
+
 .profile-leadin {
     @include rb-fluid-type-range (font-size, 18px, 28px, 320px, 2500px);
     padding: 15% 10% 5% 10%;
@@ -74,9 +91,42 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     line-height: 1.5;
-    color: $color-mouse;
+    color: $color-mouse-dead;
 
     @include rb-respond-to((to:s)) {
         padding: 15% 5% 8% 5%;
+    }
+}
+
+.profile-media {
+    padding: rb-rem-calc(50px);
+    width: 55%;
+    @include rb-respond-to((to:s)) {
+        padding: rb-rem-calc(20px);
+        width: 100%;
+    }
+}
+
+.profile-media-img {
+
+    &.is-office {
+        position: relative;
+        width: 100%;
+    }
+
+    &.is-macbook {
+        position: absolute;
+        top: 33%;
+        left: 9%;
+        width: 17%;
+        z-index: 1;
+    }
+
+    &.is-screen {
+        position: absolute;
+        width: 33%;
+        top: 24%;
+        right: 28%;
+        z-index: 1;
     }
 }

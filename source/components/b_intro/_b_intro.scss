@@ -10,31 +10,39 @@
 //----------------------------------------------------------
 
 .b-intro {
+    align-self: center;
     position: relative;
     margin: auto;
-    padding: rb-rem-calc(110px 0);
     width: 100%;
 }
 
 .intro-title {
-    @include rb-fluid-type-range (font-size, 130px, 430px, 350px, 2500px);
+    @supports (display: flex) {
+        line-height: 0.6;
+    }
+
+    @include rb-fluid-type-range (font-size, 140px, 430px, 320px, 2500px);
     position: relative;
     text-align: center;
     font-family:'Josefin Sans', sans-serif;
     font-weight: 600;
     text-transform: uppercase;
-    line-height: 0.6;
+    line-height: 0.75;
     color: $color-lollypop;
 
     &::before {
-        @include rb-fluid-type-range (width, 285px, 950px, 414px, 2500px);
+        @supports (display: flex) {
+        top: 38%;
+        height: 15%;
+        }
+        @include rb-fluid-type-range (width, 285px, 950px, 320px, 2500px);
         content: '';
         position: absolute;
         left: 0;
         right: 0;
         margin: auto;
-        height: 17.5%;
-        top: 37.5%;
+        height: 16%;
+        top: 52.5%;
         background: $color-gradient-poppyglow;
         animation: colorchange 5000ms ease-in-out;
         animation-iteration-count: infinite;
@@ -55,11 +63,11 @@
 }
 
 .intro-leadin {
-    @include rb-fluid-type-range (font-size, 12px, 36px, 414px, 2500px);
+    @include rb-fluid-type-range (font-size, 11px, 34px, 320px, 2500px);
     display: block;
     text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     text-transform: uppercase;
     color: $color-eggshell;
 }

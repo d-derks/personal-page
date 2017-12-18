@@ -9,19 +9,16 @@ layout: default_tpl.hbs
         {{/with}}
     </div>
 </section>
-<div class="page-section is-bg-enlightened">
-    <svg class="page-section-inner is-bottomarrow" viewBox="0 -120.2 1439.75 240.7">
-        <path fill="#1377a7" d="M719.82 120.5l719.93-240.2-717-.5L0-119.7"/>
-    </svg>
+<div class="page-section is-not-padded">
+    <div class="b-media is-bottomarrow">
+        <svg class="media-img is-bottomarrow" viewBox="0 -120.2 1439.75 240.7">
+            <path fill="#1377a7" d="M719.82 120.5l719.93-240.2-717-.5L0-119.7"/>
+        </svg>
+    </div>
 </div>
-<section class="page-section is-bg-enlightened" id="who">
-    <div class="page-section-inner is-width-fully">
-        {{#with b_profile}}
-            {{> b_profile }}
-        {{/with}}
-        <div class="b-media is-profile">
-            <img class="media-img" src="../assets/media/img-temp/dd.png" alt="image of me">
-        </div>
+<section class="page-section is-profile" id="who">
+    <div class="page-section-inner">
+            {{> b_profile}}
     </div>
 </section>
 <section class="page-section">

@@ -18,6 +18,7 @@
     overflow-y: scroll;
     font-smooth: auto;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     background: $color-eggshell;
 }
 
@@ -70,7 +71,7 @@
     width: 100%;
     height: 93.5vh;
     @include rb-respond-to((to:xs)) {
-        height: 73vh;
+        height: 80vh;
     }
 }
 
@@ -83,7 +84,7 @@
 .page-section {
     position: relative;
     width: 100%;
-    background-color: $color-eggshell;
+    background-color: $color-brighter;
     overflow: hidden;
 
     @include rb-respond-to((to:m)) {
@@ -106,9 +107,44 @@
         background: $color-lollypop;
     }
 
-    &.is-bg-enlightened {
-        background: $color-brighter;
+    &.is-not-padded {
         padding: 0;
+    }
+    &.is-profile {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 0;
+            width: 100%;
+            background: $color-bright;
+
+            @include rb-respond-to((to:xxs)) {
+                height: 15%;
+            }
+
+            @include rb-respond-to(xs) {
+                height: 20%;
+            }
+
+            @include rb-respond-to(s) {
+                bottom: 4%;
+                height: 22%;
+            }
+
+            @include rb-respond-to(m) {
+                bottom: 13%;
+                height: 30%;
+            }
+            @include rb-respond-to((from:l)) {
+                bottom: -15%;
+                height: 50%;
+            }
+        }
     }
 }
 
@@ -116,12 +152,12 @@
     padding-top: rb-rem-calc(100px);
     position: relative;
     margin: auto;
-    max-width: rb-rem-calc(2000px);
+    max-width: rb-rem-calc(1500px);
 
     &.is-height-special {
         height: 90vh;
         @include rb-respond-to((to:xs)) {
-            height: 70vh;
+            height: 80vh;
         }
     }
 
@@ -130,27 +166,12 @@
     }
 
     &.is-pos-centered {
-        padding-top: 0;
         display: flex;
-    }
-
-    &.is-bottomarrow {
         padding-top: 0;
-        top: -1px;
-        overflow: hidden;
-        max-width: 100%;
     }
 
     &.is-width-fully {
         max-width: 100%;
-    }
-}
-
-.section-box {
-    &.is-profile {
-        margin-left: auto;
-        width: 55%;
-        opacity: 0.9;
     }
 }
 

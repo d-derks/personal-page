@@ -11,7 +11,7 @@
         "img": "/assets/media/img-temp/html.svg",
         "alt": "Html5 icon",
         "position":"is-pos-right",
-        "text": "Clear and well-structured component based coding"
+        "text": "Clear and semantic component based markup"
       },
       {
         "title": "SASS",
@@ -19,7 +19,7 @@
         "img": "/assets/media/img-temp/sass.svg",
         "alt": "SASS",
         "position":"is-pos-left",
-        "text": "Use SASS for to work faster and cleaner"
+        "text": "Working more efficient with this preprocessor"
       },
       {
         "title": "Javascript",
@@ -27,7 +27,7 @@
         "img": "/assets/media/img-temp/js.svg",
         "alt": "javascript",
         "position":"is-pos-right",
-        "text": "Made my first steps into the world of JS"
+        "text": "Basic knowledge of JS"
       },
       {
         "title": "JQuery",
@@ -35,7 +35,7 @@
         "img": "/assets/media/img-temp/jquery.svg",
         "alt": "Jquery",
         "position":"is-pos-left",
-        "text": "Use this library when neccesary"
+        "text": "Working faster by using this library"
       },
       {
         "title": "CSS",
@@ -43,7 +43,7 @@
         "img": "/assets/media/img-temp/css.svg",
         "alt": "CSS",
         "position":"is-pos-right",
-        "text": "Try to develop as much as I can in this area"
+        "text": "Structured and performance optimised styles"
       },
       {
         "title": "PHP",
@@ -51,7 +51,7 @@
         "img": "/assets/media/img-temp/php.svg",
         "alt": "PHP",
         "position":"is-pos-right",
-        "text": "Knowledge of PHP fundamentals"
+        "text": "Basic knowledge of PHP"
       }
     ]
   },
@@ -67,7 +67,7 @@
         "img": "/assets/media/img-temp/git.svg",
         "alt": "Git",
         "position":"is-pos-right",
-        "text": "use Git for corporation and backing up"
+        "text": "For corporation and backing-up"
       },
       {
         "title": "Gulp",
@@ -75,7 +75,7 @@
         "img": "/assets/media/img-temp/gulp.svg",
         "alt": "gulp",
         "position":"is-pos-left",
-        "text": "Use this task manager to easy-up"
+        "text": "For an automatic efficient workflow"
       }
     ]
   },
@@ -93,7 +93,7 @@
         "angle": "is-turned-right",
         "img": "/assets/media/img-temp/illustrator.svg",
         "alt": "illustrator",
-        "text": "Vector images are just the bomb!"
+        "text": "Responsive scalable Vector images"
       },
       {
         "title": "Sketch",
@@ -101,7 +101,7 @@
         "angle": "is-turned-right",
         "img": "/assets/media/img-temp/sketch.svg",
         "alt": "sketch",
-        "text": "Use sketch for my designs"
+        "text": "For digital responsive design"
       },
       {
         "title": "Photoshop",
@@ -109,7 +109,7 @@
         "angle": "is-turned-right",
         "img": "/assets/media/img-temp/photoshop.svg",
         "alt": "photoshop",
-        "text": "Use photoshop to measure out designs"
+        "text": "For user-interface design"
       }
     ]
   }
