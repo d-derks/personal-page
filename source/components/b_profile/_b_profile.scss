@@ -41,8 +41,8 @@
     text-align: center;
     text-transform: uppercase;
     font-family: 'Josefin Sans', sans-serif;
-    font-weight: 600;
-    color: $color-lollypop;
+    font-weight: 700;
+    color: $color-flashy;
 
     & > .is-second-level {
         display: block;
@@ -52,12 +52,12 @@
         content: '';
         position: absolute;
         left: 0;
-        bottom: rb-rem-calc(-70px);
+        bottom: rb-rem-calc(-55px);
         right: 0;
         margin: auto;
         width: rb-rem-calc(12px);
-        height: rb-rem-calc(70px);
-        background: $color-lollypop;
+        height: rb-rem-calc(60px);
+        background: $color-flashy;
 
         @include rb-respond-to((to:xs)) {
             bottom: rb-rem-calc(-30px);
@@ -99,8 +99,10 @@
 }
 
 .profile-media {
+    position: relative;
     padding: rb-rem-calc(50px);
     width: 55%;
+
     @include rb-respond-to((to:s)) {
         padding: rb-rem-calc(20px);
         width: 100%;
@@ -109,15 +111,22 @@
 
 .profile-media-img {
 
-    &.is-office {
+    &.is-table {
         position: relative;
         width: 100%;
+    }
+
+    &.is-window {
+        position: absolute;
+        width: 30%;
+        top: 0;
+        left: 13%;
     }
 
     &.is-macbook {
         position: absolute;
         top: 33%;
-        left: 9%;
+        left: 14%;
         width: 17%;
         z-index: 1;
     }
@@ -125,7 +134,7 @@
     &.is-screen {
         position: absolute;
         width: 33%;
-        top: 24%;
+        top: 26%;
         right: 28%;
         z-index: 1;
     }

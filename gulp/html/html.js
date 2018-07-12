@@ -47,7 +47,7 @@ module.exports = (paths, gulp, plugins) => {
         assemble.data(plugins.path.join(paths.components, '**/*.{json, js}'));
 
         return assemble.src(pages, {layout: 'default_tpl'})
-                       .pipe(!isDocs ? plugins.util.noop() : plugins.tap(createDocs))
+                       // .pipe(!isDocs ? plugins.util.noop() : plugins.tap(createDocs))
                        .pipe(plugins.rename(function(path) {
                            path.dirname = '';
                        }))
@@ -67,7 +67,7 @@ module.exports = (paths, gulp, plugins) => {
             createHTML(
                 [
                     plugins.path.join(paths.html, 'pages/**/*.hbs'),
-                    plugins.path.join(paths.helpers, 'styleguide/templates/pages/*.hbs'),
+                    // plugins.path.join(paths.helpers, 'styleguide/templates/pages/*.hbs'),
                 ],
                 paths.dev,
                 false

@@ -25,16 +25,17 @@
     position: relative;
     text-align: center;
     font-family:'Josefin Sans', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
     line-height: 0.75;
-    color: $color-lollypop;
+    color: $color-misty;
 
     &::before {
         @supports (display: flex) {
-        top: 38%;
-        height: 15%;
+        top: 36%;
+        height: 17%;
         }
+
         @include rb-fluid-type-range (width, 285px, 950px, 320px, 2500px);
         content: '';
         position: absolute;
@@ -43,32 +44,21 @@
         margin: auto;
         height: 16%;
         top: 52.5%;
-        background: $color-gradient-poppyglow;
+        background: $color-pleasure-deep;
         animation: colorchange 5000ms ease-in-out;
         animation-iteration-count: infinite;
 
-        @keyframes colorchange
-        {
-            0%   {
-                background-position:calc(0% - 250px) center;
-            }
-            50%  {
-                background-position:calc(100% + 250px) center;
-            }
-            100%  {
-                background-position:calc(0% - 250px) center;
-            }
-        }
     }
 }
 
 .intro-leadin {
-    @include rb-fluid-type-range (font-size, 11px, 34px, 320px, 2500px);
+    @include rb-fluid-type-range (font-size, 13px, 40px, 320px, 2500px);
     display: block;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
     text-transform: uppercase;
+    line-height: 1;
     color: $color-eggshell;
 }
 

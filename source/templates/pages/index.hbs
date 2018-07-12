@@ -12,7 +12,7 @@ layout: default_tpl.hbs
 <div class="page-section is-not-padded">
     <div class="b-media is-bottomarrow">
         <svg class="media-img is-bottomarrow" viewBox="0 -120.2 1439.75 240.7">
-            <path fill="#1377a7" d="M719.82 120.5l719.93-240.2-717-.5L0-119.7"/>
+            <path fill="#16181f" d="M719.82 120.5l719.93-240.2-717-.5L0-119.7"/>
         </svg>
     </div>
 </div>
@@ -54,13 +54,21 @@ layout: default_tpl.hbs
         </div>
     </div>
 </section>
-<section class="page-section is-bg-poppy">
-    <div class="page-section-inner is-pos-centered is-height-special">
-        <div class="b-shape is-cirkel is-lollypop">
-            <div class="shape-dept-1 is-cirkel">
-                <div class="shape-dept-2 is-cirkel">
-                </div>
-            </div>
+<section class="page-section is-special">
+    <div class="page-section-inner is-width-height-full">
+        <div class="b-media is-contact">
+            <img
+                class="media-img is-contact lazyload"
+                data-srcset="
+                        ../../assets/media/img-temp/debbieWorkingThailand_jzkkng_c_scale,w_200.jpg 200w,
+                        ../../assets/media/img-temp/debbieWorkingThailand_jzkkng_c_scale,w_889.jpg 889w,
+                        ../../assets/media/img-temp/debbieWorkingThailand_jzkkng_c_scale,w_1339.jpg 1339w,
+                        ../../assets/media/img-temp/debbieWorkingThailand_jzkkng_c_scale,w_2400.jpg 2400w
+                        "
+                src="../../assets/media/img-temp/debbieWorkingThailand_jzkkng_c_scale,w_2400.jpg"
+                data-sizes="auto"
+                alt="Debbie working in Thailand"
+            >
         </div>
         {{#with b_contact}}
             {{> b_contact }}

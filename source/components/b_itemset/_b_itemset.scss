@@ -135,9 +135,9 @@
         position: relative;
         margin-bottom: rb-rem-calc(10px);
         font-family:'Montserrat', sans-serif;
-        font-weight: 400;
+        font-weight: 500;
         text-transform: uppercase;
-        color: $color-universe+30;
+        color: $color-universe;
 
         &::after {
             content: '';
@@ -146,7 +146,7 @@
             left: 0;
             height: rb-rem-calc(2px);
             width: 20px;
-            background: $color-universe+30;
+            background: $color-universe;
         }
     }
     @include rb-respond-to((from:m)) {
@@ -156,10 +156,11 @@
         padding: rb-rem-calc(3px 15px);
         bottom: rb-rem-calc(-80px);
         text-align: center;
-        font-family: "Century Gothic", sans-serif;
+        font-family: "Montserrat", sans-serif;
         text-transform: uppercase;
-        box-shadow: 0 0 0 5px $color-mouse-old;
-        color: $color-mouse-old;
+        font-weight: 500;
+        box-shadow: 0 0 0 3px $color-universe;
+        color: $color-universe;
         background: $color-eggshell;
         z-index: $z-itemset-topic-title;
     }
@@ -289,6 +290,26 @@
                 transform: translate3d(200px, -125px, 0);
             }
         }
+    &.is-pos-left {
+
+        @include rb-respond-to((from:m)) {
+            transform: translate3d(-150px, -100px, 0);
+        }
+
+        @include rb-respond-to((from: xl)) {
+            transform: translate3d(-200px, -125px, 0);
+        }
+    }
+
+    &.is-pos-right {
+        @include rb-respond-to((from:m)) {
+            transform: translate3d(150px, -100px, 0);
+        }
+
+        @include rb-respond-to((from: xl)) {
+            transform: translate3d(200px, -125px, 0);
+        }
+    }
 
     &::after {
 
@@ -345,7 +366,7 @@
         padding: rb-rem-calc(10px);
         width: rb-rem-calc(80px);
         height: rb-rem-calc(80px);
-        background: $color-universe+30;
+        background: $color-universe;
     }
 
     @include rb-respond-to((from: m)) {

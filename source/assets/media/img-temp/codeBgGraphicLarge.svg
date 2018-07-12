@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="430" height="551" viewBox="0 0 430 551">
   <path fill="none" stroke="#444445" stroke-miterlimit="10" d="M13.544 141.583l407.68 265.65M4.365 410.546l414.28-266.385M211.86 9.732l6.444 521.96M211.86 9.732L4.365 410.546M211.86 12.31l209.364 393.634M418.646 144.16L218.304 531.693M13.544 141.583l204.76 390.11"/>
-  <circle fill="#FF4E7F" stroke="#FF4E7F" stroke-width="3" stroke-miterlimit="10" cx="150.642" cy="130.234" r="8.377"/>
+  <circle fill="#ff0353" stroke="#ff0353" stroke-width="3" stroke-miterlimit="10" cx="150.642" cy="130.234" r="8.377"/>
   <circle fill="#D1BB1C" stroke="#D1BB1C" stroke-width="3" stroke-miterlimit="10" cx="103.156" cy="346.545" r="8.377"/>
   <circle fill="#F0F" stroke="#F0F" stroke-width="3" stroke-miterlimit="10" cx="343.961" cy="193.385" r="8.377"/>
-  <circle fill="#66FCF1" stroke="#66FCF1" stroke-width="3" stroke-miterlimit="10" cx="331.073" cy="313.242" r="8.377"/>
-  <circle fill="#FF4E7F" stroke="#FF4E7F" stroke-width="3" stroke-miterlimit="10" cx="264.499" cy="443.174" r="8.376"/>
-  <circle fill="#F98243" stroke="#F98243" stroke-width="3" stroke-miterlimit="10" cx="77.181" cy="262.979" r="8.377"/>
+  <circle fill="#4404da" stroke="#4404da" stroke-width="3" stroke-miterlimit="10" cx="331.073" cy="313.242" r="8.377"/>
+  <circle fill="#ff0353" stroke="#ff0353" stroke-width="3" stroke-miterlimit="10" cx="264.499" cy="443.174" r="8.376"/>
+  <circle fill="#4404da" stroke="#4404da" stroke-width="3" stroke-miterlimit="10" cx="77.181" cy="262.979" r="8.377"/>
   <path fill="none" d="M0 0h430v551H0z"/>
 </svg>

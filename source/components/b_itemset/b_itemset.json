@@ -10,7 +10,6 @@
         "type": "is-code",
         "img": "/assets/media/img-temp/html.svg",
         "alt": "Html5 icon",
-        "position":"is-pos-right",
         "text": "Clear and semantic component based markup"
       },
       {
@@ -18,7 +17,6 @@
         "type": "is-code",
         "img": "/assets/media/img-temp/sass.svg",
         "alt": "SASS",
-        "position":"is-pos-left",
         "text": "Working more efficient with this preprocessor"
       },
       {
@@ -26,7 +24,6 @@
         "type": "is-code",
         "img": "/assets/media/img-temp/js.svg",
         "alt": "javascript",
-        "position":"is-pos-right",
         "text": "Basic knowledge of JS"
       },
       {
@@ -34,7 +31,6 @@
         "type": "is-code",
         "img": "/assets/media/img-temp/jquery.svg",
         "alt": "Jquery",
-        "position":"is-pos-left",
         "text": "Working faster by using this library"
       },
       {
@@ -42,22 +38,21 @@
         "type": "is-code",
         "img": "/assets/media/img-temp/css.svg",
         "alt": "CSS",
-        "position":"is-pos-right",
         "text": "Structured and performance optimised styles"
       },
       {
-        "title": "PHP",
+        "title": "React",
         "type": "is-code",
-        "img": "/assets/media/img-temp/php.svg",
-        "alt": "PHP",
-        "position":"is-pos-right",
-        "text": "Basic knowledge of PHP"
+        "img": "/assets/media/img-temp/react.svg",
+        "alt": "React",
+        "text": "Working with react with focus on the UI"
       }
     ]
   },
   "tools": {
     "topic": "Tools",
     "type": "is-tools",
+    "position":"is-pos-left",
     "img": "/assets/media/img-temp/devtools.svg",
     "alt": "tools",
     "items": [
@@ -66,7 +61,6 @@
         "type": "is-tools",
         "img": "/assets/media/img-temp/git.svg",
         "alt": "Git",
-        "position":"is-pos-right",
         "text": "For corporation and backing-up"
       },
       {
@@ -74,8 +68,21 @@
         "type": "is-tools",
         "img": "/assets/media/img-temp/gulp.svg",
         "alt": "gulp",
-        "position":"is-pos-left",
         "text": "For an automatic efficient workflow"
+      },
+      {
+        "title": "npm",
+        "type": "is-tools is-pos-left",
+        "img": "/assets/media/img-temp/npm.svg",
+        "alt": "npm",
+        "text": "Package manager for an effective workflow"
+      },
+      {
+        "title": "node js",
+        "type": "is-tools is-pos-right",
+        "img": "/assets/media/img-temp/node.svg",
+        "alt": "node js",
+        "text": "Use this JS open source platform"
       }
     ]
   },

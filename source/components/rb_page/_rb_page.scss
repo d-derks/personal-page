@@ -19,7 +19,7 @@
     font-smooth: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: $color-eggshell;
+    background: $color-flashy;
 }
 
 //wrapper page
@@ -34,9 +34,10 @@
 .page-header {
     position: fixed;
     top: 0;
+    padding: rb-rem-calc(10px 0);
     width: 100%;
     border-bottom: 1px solid $color-eggshell;
-    background: $color-jeans;
+    background: $color-universe;
     z-index: $z-pageheader;
 
     &::before {
@@ -62,7 +63,7 @@
     width: 100%;
 
     &.is-bg-bright {
-        background: $color-jeans;
+        background: $color-universe;
     }
 }
 
@@ -99,8 +100,22 @@
         background: $color-stone;
     }
 
-    &.is-bg-universe {
-        background: $color-gradient-universe;
+    &.is-special {
+        padding: 0;
+        background: $color-universe;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: $color-flashy;
+            opacity: 0.4;
+            z-index: 0;
+
+        }
     }
 
     &.is-bg-poppy {
@@ -173,13 +188,19 @@
     &.is-width-fully {
         max-width: 100%;
     }
+
+    &.is-width-height-full {
+        padding: 0;
+        max-width: 100%;
+    }
 }
 
 // footer page
 
 .page-footer {
     width: 100%;
-    background: $color-pleasure-deep;
+    border-top: solid 2px $color-flashy;
+    background: $color-universe;
 }
 
 .page-footer-inner {

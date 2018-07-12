@@ -1,31 +1,33 @@
 // Color-Variables
 
+$color-misty: #f2f2f2;
 $color-eggshell: #f3f3f3;
 $color-bright: #e4e4e4;
 $color-brighter: #f9f9f9;
 $color-stone: #d2d2d2;
 $color-mouse: #727275;
-$color-mouse-old: #5d5d5d;
+$color-mouse-old: #262a34;
 $color-mouse-dead: #3f3f45;
-$color-universe: #1c1924;
+$color-universe: #16181f;
 $color-mustard: #f6e671;
 $color-mustard-spice: #d7b320;
 $color-dutch: #f98243;
 $color-piggy: #f7b1bd;
 $color-pleasure: #ff4e7f;
 $color-lollypop: #f16d85;
-$color-pleasure-deep: rgb(247, 41, 98);
+$color-pleasure-deep: #ff0353;
 $color-parrot: #ff00ff;
 $color-mint: #66fcf1;
 $color-petrol: #578fa9;
 $color-jeans: #1377a7;
+$color-flashy: #4404da;
 
 
 // Gradients
 $color-gradient-universe: radial-gradient(ellipse at center, rgba(53,53,74,1) 0%, rgba(49,49,66,1) 10%, rgba(33,33,46,1) 39%, rgba(25,23,31,1) 69%, rgba(25,23,31,1) 85%, rgba(26,25,31,1) 100%);
 $color-gradient-disco-ultra: linear-gradient(to right, #ff4e7f, #f98243, #66fcf1, #f98243, #ff4e7f);
 $color-gradient-disco-triple: linear-gradient(to right, #ff4e7f, #f98243, #66fcf1);
-$color-gradient-poppyglow: linear-gradient(to right, #f16d85, #f7b1bd,#f16d85);
+$color-gradient-poppyglow: linear-gradient(to right, #ff4e7f, #f16d85,#ff4e7f);
 
 
 

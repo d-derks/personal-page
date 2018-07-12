@@ -37,9 +37,20 @@
         }
     }
 
+    &.is-contact {
+
+        &:before {
+            content: "";
+            display: block;
+            padding-top: 66%;
+        }
+    }
+
     @include rb-respond-to((from:m)) {
+
         &.is-fade-out {
             transition: all 250ms ease-out;
+
             .itemset-list-item:hover & {
                 transform: scale(0);
                 opacity: 0;
@@ -47,7 +58,20 @@
         }
     }
 
-    &.is-office {
+    &.is-window {
+        &:before {
+            content: "";
+            display: block;
+            padding-top: 150%;
+        }
+    }
+
+    &.is-window-img {
+        position: absolute;
+        top: 10%;
+    }
+
+    &.is-table {
 
         z-index: 0;
 
@@ -108,6 +132,10 @@
     width: 100%;
     height: 100%;
 
+    &.is-contact {
+        filter: contrast(1.5);
+    }
+
     &.is-profile {
         fill: $color-universe;
     }
@@ -125,6 +153,14 @@
     &.is-screen-img {
         z-index: -1;
     }
+    &.is-window-svg {
+        z-index: 0;
+    }
+
+    &.is-window-img {
+        z-index: -1;
+    }
+
 }
 
 

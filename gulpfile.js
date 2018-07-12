@@ -85,7 +85,7 @@ gulp.task('test', ['jstest']);
 
 gulp.task('dev', (fn) => {
     plugins.util.env.type = 'development';
-    plugins.runSequence('mainbuild', ['watch', 'browser-sync'], fn);
+    plugins.runSequence('mainbuild', ['html', 'watch', 'browser-sync'], fn);
 });
 
 gulp.task('testing', (fn) => {
@@ -93,13 +93,13 @@ gulp.task('testing', (fn) => {
     plugins.runSequence('mainbuild', ['watch', 'browser-sync'], fn);
 });
 
-gulp.task('build', (fn) => {
+gulp.task('build', ['clean'], (fn) => {
     plugins.util.env.type = 'production';
-    plugins.runSequence( ['mainbuild'], ['cssmin'], fn);
+    plugins.runSequence( ['copy', 'css', 'js', 'eslint'], ['cssmin', 'html'], fn);
 });
 
 gulp.task('default',  ['build']);
 
 gulp.task('mainbuild', ['clean'], (fn) => {
-    plugins.runSequence( ['copy', 'css', 'eslint', 'js'], ['html', 'jsdoc'], fn);
+    plugins.runSequence( ['copy', 'css', 'js',  'eslint'],  fn);
 });
