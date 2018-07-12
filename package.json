@@ -29,7 +29,7 @@
   "dependencies": {
     "babel-runtime": "~6.22.0",
     "bezier-easing": "~2.0.3",
-    "lazysizes": "~3.0.0-rc3",
+    "lazysizes": "^3.0.0",
     "normalize.css": "~5.0.0",
     "rawblock": "~2.1.2"
   },

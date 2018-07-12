@@ -23,7 +23,7 @@ module.exports = function(paths, gulp, plugins) {
             ],
             notify: false,
             port: 7000,
-            startPath: '/app.html',
+            startPath: '/index.html',
             server: { baseDir: paths.dev },
         });
     };

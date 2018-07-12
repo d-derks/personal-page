@@ -10,36 +10,45 @@
 //----------------------------------------------------------
 
 .b-subheader {
+    margin-bottom: rb-rem-calc(30px);
+    width: 100%;
 
-    &.is-pos-left {
+    @include rb-respond-to((from:m)) {
         position: absolute;
-        top: 35%;
-        left: -19%;
-        transform: rotate(90deg);
-
-        @media (max-width: 1080px) {
-            top: 12%;
-            left: -25%;
-        }
-    }
-
-    &.is-pos-right {
-        position: absolute;
-        top: 26%;
-        right: -13%;
-        transform: rotate(90deg);
-    }
-
-    &.is-vanish-smallscreen {
-        @media (max-width: 768px) {
-            display: none;
-        }
+        clip: rect(1px, 1px, 1px, 1px);
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        width: 1px;
+        height: 1px ;
+        overflow: hidden;
     }
 }
 
 .subheader-title {
-    @include rb-fluid-type-range (font-size, 160px, 260px, 1128px, 2500px);
+    @include rb-fluid-type-range (font-size, 26px, 36px, 320px, 768px);
+    position: relative;
+    margin-bottom: rb-rem-calc(30px);
     text-transform: uppercase;
-    font-family:'Josefin Sans', sans-serif;
-    color: $color-bright;
+    font-family:'Montserrat', sans-serif;
+    color: $color-universe;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        height: rb-rem-calc(6px);
+        width: 40px;
+        background: $color-universe;
+    }
+}
+
+.subheader-leadin {
+    @include rb-fluid-type-range (font-size, 18px, 24px, 320px, 2500px);
+    margin-bottom: rb-rem-calc(20px);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    color: $color-mouse-dead;
 }

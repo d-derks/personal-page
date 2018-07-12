@@ -2,11 +2,11 @@
     font: 400 rb-rem-calc(18px)/1.6 $font-familiy;
 
     @include rb-respond-to(xs) {
-        font-size: rb-rem-calc(14px);
+        font-size: rb-rem-calc(16px);
     }
 
     @include rb-respond-to((from:s,to:l)) {
-        @include rb-fluid-type-range(font-size, 14px, 21px, 600px, 1440px);
+        @include rb-fluid-type-range(font-size, 16px, 21px, 600px, 1440px);
     }
 
     @include rb-respond-to(xl) {

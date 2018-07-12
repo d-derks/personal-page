@@ -1,14 +1,11 @@
 {
   "who": {
-    "type": "is-pos-right is-vanish-smallscreen",
+    "type": "is-essence",
     "title": "Who"
   },
-  "what":{
-    "type": "is-pos-left",
-    "title": "What"
-  },
-  "where": {
-    "type": "is-pos-right",
-    "title": "Where"
+  "tech":{
+    "type": "is-tech",
+    "title": "I work with",
+    "text": "The following programs and technologies:"
   }
 }

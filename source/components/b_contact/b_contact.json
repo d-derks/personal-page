@@ -1,5 +1,13 @@
 {
-  "default": {
-    "data": "Hello, I'm Contact"
-  }
+  "title": "Say hi",
+  "item": [
+    {
+      "link":"mailto:2debbiederks@gmail.com",
+      "text":"2debbiederks@gmail.com"
+    },
+    {
+      "link":"tel:+4917678903509",
+      "text":"+49 (0) 176 789 03 509"
+    }
+  ]
 }

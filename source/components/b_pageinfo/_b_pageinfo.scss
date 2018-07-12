@@ -11,11 +11,13 @@
 
 
 .b-pageinfo {
-    padding: rb-rem-calc(20px 0 30px);
+    padding: rb-rem-calc(30px 0);
 }
 
 .pageinfo-copywright {
-    @include fluid-copytext;
-    font-family: "Century Gothic", sans-serif;
-    color: $color-mouse-dead;
+    font: 200 20px/1.5 'Montserrat', sans-serif;
+    color: $color-bright;
+    @include rb-respond-to((to:xs)) {
+        font-size: rb-rem-calc(12px);
+    }
 }

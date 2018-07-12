@@ -16,20 +16,25 @@
 .rb-page {
     position: relative;
     overflow-y: scroll;
-    background: $color-eggshell;
+    font-smooth: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: $color-flashy;
 }
 
-//Main wrapper page
+//wrapper page
 .page-wrapper {
     overflow-x: hidden;
     margin: auto;
+    padding-top: rb-rem-calc(70px);
     width: 100%;
 }
 
-//Main header page
+//header page
 .page-header {
     position: fixed;
     top: 0;
+    padding: rb-rem-calc(10px 0);
     width: 100%;
     border-bottom: 1px solid $color-eggshell;
     background: $color-universe;
@@ -51,32 +56,28 @@
     display: flex;
 }
 
+// intro page
+
 .page-intro {
     position: relative;
     width: 100%;
 
-    &.is-bg-universe {
-        background: $color-gradient-universe;
+    &.is-bg-bright {
+        background: $color-universe;
     }
 }
 
 .page-intro-inner {
-    @include rb-fluid-type-range (min-height, 500px, 1350px, 414px, 2500px);
     display: flex;
     width: 100%;
+    height: 93.5vh;
+    @include rb-respond-to((to:xs)) {
+        height: 80vh;
+    }
 }
 
-.page-section-bottomarrow {
-    background: $color-stone;
-}
+//Main content
 
-.page-section-bottomarrow-inner {
-    position: relative;
-    top: -1px;
-    overflow: hidden;
-}
-
-//Main content page
 .page-main {
     width: 100%;
 }
@@ -84,30 +85,95 @@
 .page-section {
     position: relative;
     width: 100%;
-    background-color: $color-eggshell;
+    background-color: $color-brighter;
+    overflow: hidden;
+
+    @include rb-respond-to((to:m)) {
+        padding:rb-rem-calc(0 30px);
+    }
+
+    @include rb-respond-to((from: m)) {
+        padding: rb-rem-calc(0 100px);
+    }
 
     &.is-bg-stone {
         background: $color-stone;
     }
 
-    &.is-bg-universe {
-        background: $color-gradient-universe;
+    &.is-special {
+        padding: 0;
+        background: $color-universe;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: $color-flashy;
+            opacity: 0.4;
+            z-index: 0;
+
+        }
     }
 
-    &.is-bg-pleasure {
-        background: $color-pleasure;
+    &.is-bg-poppy {
+        background: $color-lollypop;
+    }
+
+    &.is-not-padded {
+        padding: 0;
+    }
+    &.is-profile {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 0;
+            width: 100%;
+            background: $color-bright;
+
+            @include rb-respond-to((to:xxs)) {
+                height: 15%;
+            }
+
+            @include rb-respond-to(xs) {
+                height: 20%;
+            }
+
+            @include rb-respond-to(s) {
+                bottom: 4%;
+                height: 22%;
+            }
+
+            @include rb-respond-to(m) {
+                bottom: 13%;
+                height: 30%;
+            }
+            @include rb-respond-to((from:l)) {
+                bottom: -15%;
+                height: 50%;
+            }
+        }
     }
 }
 
 .page-section-inner {
-    @include rb-fluid-type-range (max-width, 280px, 1800px, 320px, 2500px);
-    @include rb-fluid-type-range (min-height, 450px, 1350px, 320px, 2500px);
     padding-top: rb-rem-calc(100px);
     position: relative;
     margin: auto;
+    max-width: rb-rem-calc(1500px);
 
-    &.is-width-full {
-        max-width: 100%;
+    &.is-height-special {
+        height: 90vh;
+        @include rb-respond-to((to:xs)) {
+            height: 80vh;
+        }
     }
 
     @media (max-width: 768px) {
@@ -115,16 +181,26 @@
     }
 
     &.is-pos-centered {
-        padding-top: 0;
         display: flex;
+        padding-top: 0;
+    }
+
+    &.is-width-fully {
+        max-width: 100%;
+    }
+
+    &.is-width-height-full {
+        padding: 0;
+        max-width: 100%;
     }
 }
 
-//Main footer page
+// footer page
 
 .page-footer {
     width: 100%;
-    background: $color-pleasure-deep;
+    border-top: solid 2px $color-flashy;
+    background: $color-universe;
 }
 
 .page-footer-inner {

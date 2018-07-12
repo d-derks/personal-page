@@ -9,36 +9,51 @@
 
 
 .b-contact {
-    position: relative;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     margin: auto;
     width: 100%;
+    align-self: center;
+    z-index: 5;
+
+    @include rb-respond-to((from:s)) {
+        padding: rb-rem-calc(150px 0);
+    }
 }
 
 .contact-inner {
-    @include rb-fluid-type-range (max-width, 700px, 900px, 414px, 1600px);
     position: relative;
     margin: auto;
+    max-width: 1000px;
 }
 
 .contact-title {
-    @include rb-fluid-type-range (font-size, 50px, 110px, 414px, 1600px);
+    @include rb-fluid-type-range (font-size, 70px, 170px, 320px, 2500px);
+    margin-bottom: rb-rem-calc(5px);
     text-align: center;
+    line-height: 1;
     text-transform: uppercase;
-    font-family: 'Century Gothic', sans-serif;
-    font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
     color: $color-eggshell;
+    text-shadow: 0 2px 1px rgba(0,0,0,0.8);
+    z-index: 0;
 }
 
 .contact-title-exclamationpoint {
     position: relative;
 
     &::after {
-        @include rb-fluid-type-range (width, 10px, 30px, 414px, 2500px);
-        @include rb-fluid-type-range (height, 10px, 30px, 414px, 2500px);
+        @include rb-fluid-type-range (width, 12px, 28px, 320px, 2500px);
+        @include rb-fluid-type-range (height, 12px, 28px, 320px, 2500px);
         content: '';
         position: absolute;
         right: 0;
-        bottom: 16%;
+        bottom: 21%;
         left: 0;
         margin: auto;
         border-radius: 50%;
@@ -51,17 +66,19 @@
 }
 
 .contact-list-item {
-    @include rb-fluid-type-range (font-size, 17px, 43px, 414px, 1600px);
-    font-family: 'century gothic', sans-serif;
+    @include rb-fluid-type-range (font-size, 14px, 48px, 320px, 2500px);
+    margin-bottom: rb-rem-calc(10px);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
 }
 
 .contact-list-item-inner {
     display: block;
     color: $color-eggshell;
     cursor: pointer;
-    transition: 350ms color ease-out;
+    transition: 250ms color ease-out;
 
     &:hover {
-        color: $color-mouse-dead;
+        color:$color-pleasure-deep;
     }
 }

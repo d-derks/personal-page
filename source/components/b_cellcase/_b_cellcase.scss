@@ -13,35 +13,40 @@
 .b-cellcase {
     display: flex;
     flex-wrap: wrap;
-    padding: 5% 0;
+    padding: rb-rem-calc(50px 0);
     width: 100%;
+
+    @include rb-respond-to((to:s)) {
+        padding: rb-rem-calc(20px 0);
+    }
+
+    @include rb-respond-to((from:l)) {
+        padding: rb-rem-calc(100px 0);
+    }
 }
 
 .cellcase-row {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
+    @include rb-respond-to((from:xl)) {
+        margin-bottom: rb-rem-calc(100px);
+    }
+
+    &.is-small-marginbottom {
+        @include rb-respond-to((to:s)) {
+            margin-bottom: rb-rem-calc(50px);
+        }
+    }
 }
 
 .cellcase-box {
     position: relative;
 
-    @include rb-respond-to((to:m)) {
-        margin-bottom: rb-rem-calc(40px);
-    }
-
-    @include rb-respond-to((from: m, to:xl)) {
-        margin-bottom: rb-rem-calc(70px);
-    }
-
-    @include rb-respond-to((from: xl, to:xxl)) {
-        margin-bottom: rb-rem-calc(100px);
-    }
-
     &.is-switched {
         order: 2;
     }
-
         @media (max-width: 1090px) {
             &:nth-child(2) {
                 order: 2;

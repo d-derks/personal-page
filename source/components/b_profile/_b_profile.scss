@@ -11,6 +11,7 @@
 
 
 .b-profile {
+    position: relative;
     padding-top: rb-rem-calc(100px);
     width: 100%;
 
@@ -21,52 +22,120 @@
 
 .profile-inner {
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
     padding: 0 10px;
-    max-width: 45%;
+    z-index: 2;
+}
 
-    @media (max-width: 768px) {
-        max-width: 100%;
+.profile-textbox {
+    width: 45%;
+    @include rb-respond-to((to:s)) {
+        width: 100%;
     }
 }
 
 .profile-title {
-    @include rb-fluid-type-range (font-size, 50px, 110px, 414px, 1600px);
+    @include rb-fluid-type-range (font-size, 50px, 110px, 320px, 1600px);
     position: relative;
     text-align: center;
     text-transform: uppercase;
     font-family: 'Josefin Sans', sans-serif;
-    font-weight: 600;
-    color: $color-pleasure;
+    font-weight: 700;
+    color: $color-flashy;
 
     & > .is-second-level {
         display: block;
     }
 
     &::after {
-        @include rb-fluid-type-range (height, 30px, 70px, 414px, 1600px);
-        @include rb-fluid-type-range (bottom, -35px, -70px, 414px, 1600px);
-        @include rb-fluid-type-range (width, 5px, 8px, 414px, 1600px);
         content: '';
         position: absolute;
         left: 0;
+        bottom: rb-rem-calc(-55px);
         right: 0;
         margin: auto;
-        background: $color-pleasure;
+        width: rb-rem-calc(12px);
+        height: rb-rem-calc(60px);
+        background: $color-flashy;
+
+        @include rb-respond-to((to:xs)) {
+            bottom: rb-rem-calc(-30px);
+            width: rb-rem-calc(6px);
+            height: rb-rem-calc(30px);
+        }
+
+        @include rb-respond-to((from: s, to:m)) {
+            bottom: rb-rem-calc(-50px);
+            width: rb-rem-calc(8px);
+            height: rb-rem-calc(50px);
+        }
     }
 }
 
+.profile-img {
+    position: absolute;
+    top: 0;
+    right: 250px;
+    bottom: 0;
+    left: 0;
+    margin-left:auto;
+    width: 70px;
+    border-radius: 50%;
+}
+
 .profile-leadin {
-    @include rb-fluid-type-range (padding-top, 50px, 100px, 414px, 1600px);
-    @include fluid-copytext;
+    @include rb-fluid-type-range (font-size, 18px, 28px, 320px, 2500px);
+    padding: 15% 10% 5% 10%;
     text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
     color: $color-mouse-dead;
+
+    @include rb-respond-to((to:s)) {
+        padding: 15% 5% 8% 5%;
+    }
 }
 
 .profile-media {
-    position: absolute;
-    right: -17%;
-    width: 65%;
-    bottom: -3px;
-    opacity: 0.9;
+    position: relative;
+    padding: rb-rem-calc(50px);
+    width: 55%;
+
+    @include rb-respond-to((to:s)) {
+        padding: rb-rem-calc(20px);
+        width: 100%;
+    }
+}
+
+.profile-media-img {
+
+    &.is-table {
+        position: relative;
+        width: 100%;
+    }
+
+    &.is-window {
+        position: absolute;
+        width: 30%;
+        top: 0;
+        left: 13%;
+    }
+
+    &.is-macbook {
+        position: absolute;
+        top: 33%;
+        left: 14%;
+        width: 17%;
+        z-index: 1;
+    }
+
+    &.is-screen {
+        position: absolute;
+        width: 33%;
+        top: 26%;
+        right: 28%;
+        z-index: 1;
+    }
 }

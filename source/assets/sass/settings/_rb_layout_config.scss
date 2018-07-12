@@ -12,8 +12,11 @@ $breakpoint-config: (
         order-size: 5,
         grid-max-width: 77.5em //1240px
     ),
+    xxs: (
+        media: "(max-width: 24.9999em)" //< 399px
+    ),
     xs: (
-        media: "(max-width: 34.9999em)" //< 559px
+        media: "(min-width: 25em) and (max-width: 34.9999em)" //< 559px
     ),
     s: (
         media: "(min-width: 35em) and (max-width: 49.9999em)", //560px to 799px

@@ -10,54 +10,55 @@
 //----------------------------------------------------------
 
 .b-intro {
+    align-self: center;
     position: relative;
     margin: auto;
     width: 100%;
 }
 
 .intro-title {
-    @include rb-fluid-type-range (font-size, 115px, 430px, 414px, 2500px);
+    @supports (display: flex) {
+        line-height: 0.6;
+    }
+
+    @include rb-fluid-type-range (font-size, 140px, 430px, 320px, 2500px);
+    position: relative;
     text-align: center;
     font-family:'Josefin Sans', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
-    line-height: 0.6;
-    color: $color-eggshell;
+    line-height: 0.75;
+    color: $color-misty;
 
     &::before {
-        @include rb-fluid-type-range (width, 250px, 950px, 414px, 2500px);
+        @supports (display: flex) {
+        top: 36%;
+        height: 17%;
+        }
+
+        @include rb-fluid-type-range (width, 285px, 950px, 320px, 2500px);
         content: '';
         position: absolute;
         left: 0;
         right: 0;
         margin: auto;
-        height: 15.5%;
-        top: 34%;
-        background: $color-gradient-disco-ultra;
+        height: 16%;
+        top: 52.5%;
+        background: $color-pleasure-deep;
         animation: colorchange 5000ms ease-in-out;
         animation-iteration-count: infinite;
 
-        @keyframes colorchange
-        {
-            0%   {
-                background-position:calc(0% - 250px) center;
-            }
-            50%  {
-                background-position:calc(100% + 250px) center;
-            }
-            100%  {
-                background-position:calc(0% - 250px) center;
-            }
-        }
     }
 }
 
 .intro-leadin {
-    @include rb-fluid-type-range (font-size, 10px, 36px, 414px, 2500px);
+    @include rb-fluid-type-range (font-size, 13px, 40px, 320px, 2500px);
+    display: block;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     text-transform: uppercase;
+    line-height: 1;
     color: $color-eggshell;
 }
 

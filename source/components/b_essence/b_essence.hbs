@@ -3,31 +3,10 @@ component: Essence
 ---
 
 <section class="b-essence">
-    <h3 class="essence-subtitle">In a nutshell:</h3>
-    <ul class="essence-list">
-        <li class="essence-list-item">
-            Studied several corners of design
-        </li>
-        <li class="essence-list-item">
-            Absolutely thrilled about the creation process
-        </li>
-        <li class="essence-list-item">
-            Thrives to find the perfect balance between the beauty of simplicity and functionality
-        </li>
-    </ul>
-    <h3 class="essence-subtitle">Believes in:</h3>
-    <ul class="essence-list">
-        <li class="essence-list-item">
-            Accessible Websites
-        </li>
-        <li class="essence-list-item">
-            Component based development
-        </li>
-        <li class="essence-list-item">
-            Responsive design
-        </li>
-        <li class="essence-list-item">
-            User-centered Design
-        </li>
-    </ul>
+    <div class="essence-textbox">
+        <h2 class="essence-textbox-title">{{title}}</h2>
+        {{#each paragraph}}
+            <p class="essence-textbox-text">{{text}}</p>
+        {{/each}}
+    </div>
 </section>

@@ -11,6 +11,9 @@
 //**********************************************************
 $itemscroller-js-cfg: (
     name: itemscroller,
+    switchedOff: false,
+    centerMode: true,
+    carousel: true,
     //queries: "(max-width: 480px) 100%, (max-width: 1024px) 50%, 600px",
 );
 
@@ -22,6 +25,7 @@ $itemscroller-js-cfg: (
     @include rb-js-export($itemscroller-js-cfg);
     display: block;
     position: relative;
+    margin-bottom: rb-rem-calc(250px);
     user-select: none;
     transition: 300ms opacity;
 }
@@ -30,6 +34,8 @@ $itemscroller-js-cfg: (
     overflow: hidden;
     position: relative;
     width: 100%;
+    background: #757072;
+    box-shadow: 6px 15px 40px #757072;
 }
 
 .itemscroller-content {

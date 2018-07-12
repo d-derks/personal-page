@@ -1,0 +1,90 @@
+---
+title: Startpagina
+layout: default_tpl.hbs
+---
+<section class="page-intro is-bg-bright">
+    <div class="page-intro-inner">
+        {{#with b_intro.default}}
+            {{> b_intro }}
+        {{/with}}
+    </div>
+</section>
+<div class="page-section is-not-padded">
+    <div class="b-media is-bottomarrow">
+        <svg class="media-img is-bottomarrow" viewBox="0 -120.2 1439.75 240.7">
+            <path fill="#16181f" d="M719.82 120.5l719.93-240.2-717-.5L0-119.7"/>
+        </svg>
+    </div>
+</div>
+<section class="page-section is-profile" id="who">
+    <div class="page-section-inner">
+            {{> b_profile}}
+    </div>
+</section>
+<section class="page-section">
+    <div class="page-section-inner">
+        <div class="b-cellcase">
+            <div class="cellcase-row">
+                <div class="cellcase-box u-size-50 u-size-100-lte-m is-switched">
+                    {{#with b_essence}}
+                        {{> b_essence }}
+                    {{/with}}
+                </div>
+                <div class="cellcase-box u-size-50 u-size-100-lte-m">
+                    {{#with b_subheader.tech}}
+                        {{> b_subheader }}
+                    {{/with}}
+                    {{#with b_itemset.code}}
+                        {{> b_itemset }}
+                    {{/with}}
+                </div>
+            </div>
+            <div class="cellcase-row is-small-marginbottom">
+                <div class="cellcase-box u-size-50 u-size-100-lte-m">
+                    {{#with b_itemset.tools}}
+                        {{> b_itemset }}
+                    {{/with}}
+                </div>
+                <div class="cellcase-box u-size-50 u-size-100-lte-m">
+                    {{#with b_itemset.design}}
+                        {{> b_itemset }}
+                    {{/with}}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="page-section is-special">
+    <div class="page-section-inner is-width-height-full">
+        <div class="b-media is-contact">
+            <img
+                class="media-img is-contact lazyload"
+                data-srcset="
+                        ../../assets/media/img-temp/debbieWorkingThailand_jzkkng_c_scale,w_200.jpg 200w,
+                        ../../assets/media/img-temp/debbieWorkingThailand_jzkkng_c_scale,w_889.jpg 889w,
+                        ../../assets/media/img-temp/debbieWorkingThailand_jzkkng_c_scale,w_1339.jpg 1339w,
+                        ../../assets/media/img-temp/debbieWorkingThailand_jzkkng_c_scale,w_2400.jpg 2400w
+                        "
+                src="../../assets/media/img-temp/debbieWorkingThailand_jzkkng_c_scale,w_2400.jpg"
+                data-sizes="auto"
+                alt="Debbie working in Thailand"
+            >
+        </div>
+        {{#with b_contact}}
+            {{> b_contact }}
+        {{/with}}
+    </div>
+</section>
+<footer class="page-footer">
+    <div class="page-footer-inner">
+        {{#with b_pageinfo}}
+            {{> b_pageinfo }}
+        {{/with}}
+    </div>
+</footer>
+
+
+
+
+
+

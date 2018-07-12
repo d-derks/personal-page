@@ -1,0 +1,53 @@
+/*
+ * Component: Brand
+**********************************************************/
+
+
+// Variables
+//**********************************************************
+
+
+//----------------------------------------------------------
+
+
+.b-brand {
+    margin: auto 0;
+}
+
+.brand-inner {
+    display: block;
+}
+
+.brand-logo {
+    display: flex;
+}
+
+.brand-logo-text {
+    width: rb-rem-calc(200px);
+    height: rb-rem-calc(50px);
+    fill: $color-eggshell;
+
+    @include rb-respond-to((to:xs)) {
+        width: rb-rem-calc(130px);
+    }
+    @include rb-respond-to((from:xxl)) {
+        width: rb-rem-calc(300px);
+    }
+
+    @media (max-width: 350px) {
+        width: rb-rem-calc(65px);
+    }
+}
+
+.brand-logo-img {
+    margin: rb-rem-calc(0 5px);
+    padding: rb-rem-calc(5px);
+    height: rb-rem-calc(50px);
+    fill: $color-eggshell;
+}
+
+.brand-logo-text {
+    @include rb-respond-to((to:xxs)) {
+        display: none;
+    }
+}

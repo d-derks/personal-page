@@ -53,7 +53,7 @@ module.exports = function(paths, gulp, plugins) {
             webpackPlugins = [
                 new webpack.DefinePlugin({
                     'process.env': {
-                        'NODE_ENV': '"production"',
+                        'NODE_ENV': 'production',
                     },
                 }),
                 new webpack.optimize.UglifyJsPlugin(),
@@ -129,12 +129,6 @@ module.exports = function(paths, gulp, plugins) {
                    '_polyfills': plugins.path.join(paths.assets.js, '_polyfills.js'),
                },
                plugins.path.join(paths.devAssets, 'js')
-           ),
-           createJS(
-               {
-                   '_styleguide': plugins.path.join(paths.helpers, 'styleguide/js/_styleguide.js'),
-               },
-               plugins.path.join(paths.doc, 'js')
            )
        ]);
     };

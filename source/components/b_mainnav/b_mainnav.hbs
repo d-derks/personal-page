@@ -6,8 +6,8 @@ component: Mainnav
     <ul class="mainnav-list">
         {{#each items}}
             <li class="mainnav-item {{type}} ">
-                <a class="mainnav-item-inner" href="{{href}}">
-                    {{title}}
+                <a class="mainnav-item-link" href="{{href}}">
+                    <span class="mainnav-item-link-inner">{{title}}</span>
                 </a>
             </li>
         {{/each}}

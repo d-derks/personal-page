@@ -3,79 +3,86 @@
     "topic": "Code",
     "type": "is-code",
     "img": "/assets/media/img-temp/code.svg",
-    "alt": "code icon",
+    "alt": "code",
     "items": [
       {
         "title": "Html",
         "type": "is-code",
         "img": "/assets/media/img-temp/html.svg",
         "alt": "Html5 icon",
-        "position":"is-pos-right",
-        "text": "Clear and well-structured component based coding"
+        "text": "Clear and semantic component based markup"
       },
       {
         "title": "SASS",
         "type": "is-code",
         "img": "/assets/media/img-temp/sass.svg",
-        "alt": "SASS icon",
-        "position":"is-pos-left",
-        "text": "Absolutely crazy about Sass, makes life more easy"
+        "alt": "SASS",
+        "text": "Working more efficient with this preprocessor"
       },
       {
         "title": "Javascript",
         "type": "is-code",
         "img": "/assets/media/img-temp/js.svg",
-        "alt": "javascript icon",
-        "position":"is-pos-right",
-        "text": "Made my first steps into the world of JS"
+        "alt": "javascript",
+        "text": "Basic knowledge of JS"
       },
       {
         "title": "JQuery",
         "type": "is-code",
         "img": "/assets/media/img-temp/jquery.svg",
-        "alt": "Jquery icon",
-        "position":"is-pos-left",
-        "text": "Use this library when neccesary"
+        "alt": "Jquery",
+        "text": "Working faster by using this library"
       },
       {
         "title": "CSS",
         "type": "is-code",
         "img": "/assets/media/img-temp/css.svg",
-        "alt": "CSS icon",
-        "position":"is-pos-right",
-        "text": "Always try to find out the limits of its possibilities"
+        "alt": "CSS",
+        "text": "Structured and performance optimised styles"
       },
       {
-        "title": "PHP",
+        "title": "React",
         "type": "is-code",
-        "img": "/assets/media/img-temp/php.svg",
-        "alt": "PHP icon",
-        "position":"is-pos-right",
-        "text": "Knowledge of PHP fundamentals"
+        "img": "/assets/media/img-temp/react.svg",
+        "alt": "React",
+        "text": "Working with react with focus on the UI"
       }
     ]
   },
   "tools": {
     "topic": "Tools",
     "type": "is-tools",
+    "position":"is-pos-left",
     "img": "/assets/media/img-temp/devtools.svg",
-    "alt": "tools icon",
+    "alt": "tools",
     "items": [
       {
         "title": "Git",
         "type": "is-tools",
         "img": "/assets/media/img-temp/git.svg",
-        "alt": "Git icon",
-        "position":"is-pos-right",
-        "text": "for corporation and backing up"
+        "alt": "Git",
+        "text": "For corporation and backing-up"
       },
       {
         "title": "Gulp",
         "type": "is-tools",
         "img": "/assets/media/img-temp/gulp.svg",
-        "alt": "gulp icon",
-        "position":"is-pos-left",
-        "text": "Use this task manager to easy-up"
+        "alt": "gulp",
+        "text": "For an automatic efficient workflow"
+      },
+      {
+        "title": "npm",
+        "type": "is-tools is-pos-left",
+        "img": "/assets/media/img-temp/npm.svg",
+        "alt": "npm",
+        "text": "Package manager for an effective workflow"
+      },
+      {
+        "title": "node js",
+        "type": "is-tools is-pos-right",
+        "img": "/assets/media/img-temp/node.svg",
+        "alt": "node js",
+        "text": "Use this JS open source platform"
       }
     ]
   },
@@ -84,7 +91,7 @@
     "position": "is-pos-right",
     "type": "is-design",
     "img": "/assets/media/img-temp/design.svg",
-    "alt": "design icon",
+    "alt": "design",
     "angle": "is-turned-left",
     "items": [
       {
@@ -92,24 +99,24 @@
         "type": "is-design",
         "angle": "is-turned-right",
         "img": "/assets/media/img-temp/illustrator.svg",
-        "alt": "illustrator icon",
-        "text": "Vector images are just the bomb!"
+        "alt": "illustrator",
+        "text": "Responsive scalable Vector images"
       },
       {
         "title": "Sketch",
         "type": "is-design",
         "angle": "is-turned-right",
         "img": "/assets/media/img-temp/sketch.svg",
-        "alt": "sketch icon",
-        "text": "Absolutely perfect for responsive design"
+        "alt": "sketch",
+        "text": "For digital responsive design"
       },
       {
         "title": "Photoshop",
         "type": "is-design",
         "angle": "is-turned-right",
         "img": "/assets/media/img-temp/photoshop.svg",
-        "alt": "photoshop icon",
-        "text": "Great to create and measure out designs"
+        "alt": "photoshop",
+        "text": "For user-interface design"
       }
     ]
   }

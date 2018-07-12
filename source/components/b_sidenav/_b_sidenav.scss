@@ -22,9 +22,14 @@
 }
 
 .sidenav-item {
-    @include rb-fluid-type-range (width, 25px, 50px, 414px, 1280px);
-    @include rb-fluid-type-range (height, 25px, 50px, 414px, 1280px);
+    @include rb-respond-to((to:xs)) {
+        width: rb-rem-calc(35px);
+        height: rb-rem-calc(35px);
+    }
+
     margin-right: rb-rem-calc(10px);
+    height: rb-rem-calc(50px);
+    width: rb-rem-calc(50px);
 }
 
 .sidenav-item-inner {
@@ -39,7 +44,7 @@
     }
 
     &:hover .sidenav-item-icon-inner {
-        fill: $color-mouse;
+        fill: $color-mustard-spice;
     }
 }
 

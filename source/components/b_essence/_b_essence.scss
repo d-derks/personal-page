@@ -11,37 +11,69 @@
 
 
 .b-essence {
-    padding-left: rb-rem-calc(50px);
+    display: flex;
+    position: relative;
     width: 100%;
-    text-align: right;
+}
 
-    @media (max-width: 1130px) {
+.essence-textbox {
+    position: relative;
+    margin: auto;
+    margin-bottom: rb-rem-calc(50px);
+
+    @include rb-respond-to((from:m)) {
         padding-left: rb-rem-calc(50px);
-        text-align: left;
+    }
+}
 
+.essence-textbox-title {
+    @include rb-fluid-type-range (font-size, 26px, 36px, 320px, 768px);
+    position: relative;
+    margin-bottom: rb-rem-calc(30px);
+    text-transform: uppercase;
+    font-family:'Montserrat', sans-serif;
+    color: $color-universe;
+
+    @include rb-respond-to((from: xxl)) {
+        margin-bottom: rb-rem-calc(50px);
     }
 
-    @media (max-width: 1090px) {
-        margin-bottom: rb-rem-calc(50px);
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        height: rb-rem-calc(6px);
+        width: 40px;
+        background: $color-universe;
+    }
+}
 
+.essence-textbox-text {
+    @include rb-fluid-type-range (font-size, 18px, 28px, 320px, 2500px);
+    margin-bottom: 6%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    color: $color-mouse-dead;
+}
+
+.essence-list-item-focuspoint {
+    position: relative;
+    @include rb-respond-to((to:m)){
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -20px;
+            bottom: 0;
+            margin: auto;
+            width: rb-rem-calc(6px);
+            height: rb-rem-calc(6px);
+            background: $color-mouse;
+            transform: rotate(45deg);
         }
+    }
 }
 
-.essence-subtitle {
-    @include rb-fluid-type-range (font-size, 32px, 56px, 414px, 2500px);
-    margin-bottom: rb-rem-calc(20px);
-    font-family: 'Josefin Sans', sans-serif;
-    text-transform: uppercase;
-}
-
-.essence-list {
-    margin-bottom: rb-rem-calc(35px);
-}
-
-.essence-list-item {
-    @include rb-fluid-type-range (font-size, 16px, 32px, 414px, 2500px);
-    font-family:'Josefin Sans';
-    line-height: 1.7;
-    text-transform: uppercase;
-    color: $color-mouse;
-}
