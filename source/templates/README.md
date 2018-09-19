@@ -1,4 +1,4 @@
-# Personal Website
+# Personal Website Debbie Derks
 This is my own website. It is build component-based.
 
 Here you can check it out:
