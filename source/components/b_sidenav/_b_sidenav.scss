@@ -12,8 +12,7 @@
 
 .b-sidenav {
     display: flex;
-    margin-right: auto;
-    margin-left: rb-rem-calc(15px);
+    margin-left: auto;
 }
 
 .sidenav-list {
@@ -43,8 +42,9 @@
         padding-top: 100%;
     }
 
-    &:hover .sidenav-item-icon-inner {
-        fill: $color-mustard-spice;
+    &:hover .sidenav-item-icon-inner,
+    &:focus .sidenav-item-icon-inner {
+        fill: $color-pleasure-deep;
     }
 }
 
@@ -61,5 +61,5 @@
 }
 
 .sidenav-item-icon-inner {
-    transition: fill 500ms ease-out;
+    transition: fill 250ms ease-in-out;
 }
