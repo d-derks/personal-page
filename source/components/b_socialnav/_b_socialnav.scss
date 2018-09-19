@@ -1,0 +1,42 @@
+/*
+ * Component: Socialnav
+**********************************************************/
+
+
+// Variables
+//**********************************************************
+
+
+//----------------------------------------------------------
+
+
+.b-socialnav {
+    margin-left: auto;
+}
+
+.socialnav-list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 100%;
+}
+
+.socialnav-item {
+    width: rb-rem-calc(50px);
+}
+
+.socialnav-icon-inner {
+    fill: $color-eggshell;
+    transition: fill 250ms ease-in-out;
+}
+
+.socialnav-item-inner {
+    display: block;
+    padding: 5px;
+
+    &:hover .socialnav-icon-inner,
+    &:focus .socialnav-icon-inner {
+        fill: $color-pleasure-deep;
+    }
+}
+

@@ -51,7 +51,7 @@
 }
 
 .page-header-inner {
-    padding: rb-rem-calc(20px);
+    padding: rb-rem-calc(15px 20px);
     display: flex;
 
     @include rb-respond-to((to:xs)) {
