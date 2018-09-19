@@ -2,20 +2,20 @@
 title: Startpagina
 layout: default_tpl.hbs
 ---
-<section class="page-intro is-bg-bright">
+<section class="page-intro is-bg-universe">
     <div class="page-intro-inner">
         {{#with b_intro.default}}
             {{> b_intro }}
         {{/with}}
     </div>
-</section>
-<div class="page-section is-not-padded">
-    <div class="b-media is-bottomarrow">
-        <svg class="media-img is-bottomarrow" viewBox="0 -120.2 1439.75 240.7">
-            <path fill="#16181f" d="M719.82 120.5l719.93-240.2-717-.5L0-119.7"/>
-        </svg>
+    <div class="page-intro-svg">
+        <div class="b-media is-bottomarrow">
+            <svg class="media-img is-bottomarrow" viewBox="0 -120.2 1439.75 240.7">
+                <path fill="#16181f" d="M719.82 120.5l719.93-240.2-717-.5L0-119.7"/>
+            </svg>
+        </div>
     </div>
-</div>
+</section>
 <section class="page-section is-profile" id="who">
     <div class="page-section-inner">
             {{> b_profile}}

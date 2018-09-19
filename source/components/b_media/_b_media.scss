@@ -24,7 +24,24 @@
         &:before {
             content: "";
             display: block;
-            padding-top: 17%;
+            padding-top: 17.1%;
+
+            @include rb-respond-to((from:xl)) {
+                padding-top: 16.8%;
+            }
+
+            @include rb-respond-to((to:s)) {
+                padding-top: 17.4%;
+            }
+
+            @include rb-respond-to((to:xs)) {
+                padding-top: 17.8%;
+            }
+
+            @media (max-width: 400px) {
+                padding-top: 18.2%;
+            }
+
         }
     }
 

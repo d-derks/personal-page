@@ -20,10 +20,12 @@
     position: relative;
     margin: auto;
     margin-bottom: rb-rem-calc(50px);
+    padding: rb-rem-calc(0 50px);
 
-    @include rb-respond-to((from:m)) {
-        padding-left: rb-rem-calc(50px);
+    @include rb-respond-to((to:s)) {
+        padding: rb-rem-calc(0);
     }
+
 }
 
 .essence-textbox-title {

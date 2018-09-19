@@ -18,14 +18,18 @@
     display: block;
 }
 
-.brand-logo {
+.brand-svg {
     display: flex;
 }
 
-.brand-logo-text {
-    width: rb-rem-calc(200px);
+.brand-svg-text {
+    width: rb-rem-calc(175px);
     height: rb-rem-calc(50px);
     fill: $color-eggshell;
+
+    @include rb-respond-to((to:xxs)) {
+        display: none;
+    }
 
     @include rb-respond-to((to:xs)) {
         width: rb-rem-calc(130px);
@@ -39,15 +43,10 @@
     }
 }
 
-.brand-logo-img {
+.brand-svg-image {
     margin: rb-rem-calc(0 5px);
     padding: rb-rem-calc(5px);
-    height: rb-rem-calc(50px);
+    height: rb-rem-calc(45px);
     fill: $color-eggshell;
 }
 
-.brand-logo-text {
-    @include rb-respond-to((to:xxs)) {
-        display: none;
-    }
-}

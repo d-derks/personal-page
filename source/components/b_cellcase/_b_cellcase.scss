@@ -13,15 +13,14 @@
 .b-cellcase {
     display: flex;
     flex-wrap: wrap;
-    padding: rb-rem-calc(50px 0);
     width: 100%;
 
-    @include rb-respond-to((to:s)) {
-        padding: rb-rem-calc(20px 0);
+    @include rb-respond-to((from:l)) {
+        padding: rb-rem-calc(75px 0);
     }
 
-    @include rb-respond-to((from:l)) {
-        padding: rb-rem-calc(100px 0);
+    @include rb-respond-to((from:s,to:m)) {
+        padding: rb-rem-calc(50px);
     }
 }
 

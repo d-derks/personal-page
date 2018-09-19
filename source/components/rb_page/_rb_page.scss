@@ -34,7 +34,6 @@
 .page-header {
     position: fixed;
     top: 0;
-    padding: rb-rem-calc(10px 0);
     width: 100%;
     border-bottom: 1px solid $color-eggshell;
     background: $color-universe;
@@ -52,8 +51,12 @@
 }
 
 .page-header-inner {
-    padding: rb-rem-calc(0 20px);
+    padding: rb-rem-calc(20px);
     display: flex;
+
+    @include rb-respond-to((to:xs)) {
+        padding: rb-rem-calc(15px);
+    }
 }
 
 // intro page
@@ -62,7 +65,7 @@
     position: relative;
     width: 100%;
 
-    &.is-bg-bright {
+    &.is-bg-universe {
         background: $color-universe;
     }
 }
@@ -71,8 +74,24 @@
     display: flex;
     width: 100%;
     height: 93.5vh;
+
     @include rb-respond-to((to:xs)) {
         height: 80vh;
+    }
+}
+
+.page-intro-svg {
+    position: relative;
+    width: 100%;
+    padding-bottom: rb-rem-calc(80px);
+    background-color: $color-brighter;
+    overflow: hidden;
+
+    @include rb-respond-to((to:s)) {
+        padding-bottom: rb-rem-calc(50px);
+    }
+    @include rb-respond-to((to:xs)) {
+        padding-bottom: rb-rem-calc(20px);
     }
 }
 
@@ -87,14 +106,6 @@
     width: 100%;
     background-color: $color-brighter;
     overflow: hidden;
-
-    @include rb-respond-to((to:m)) {
-        padding:rb-rem-calc(0 30px);
-    }
-
-    @include rb-respond-to((from: m)) {
-        padding: rb-rem-calc(0 100px);
-    }
 
     &.is-bg-stone {
         background: $color-stone;
@@ -116,10 +127,6 @@
             z-index: 0;
 
         }
-    }
-
-    &.is-bg-poppy {
-        background: $color-lollypop;
     }
 
     &.is-not-padded {
@@ -164,10 +171,14 @@
 }
 
 .page-section-inner {
-    padding-top: rb-rem-calc(100px);
+    padding: rb-rem-calc(100px 20px);
     position: relative;
     margin: auto;
-    max-width: rb-rem-calc(1500px);
+    max-width: rb-rem-calc(1600px);
+
+    @include rb-respond-to((to:xxs)) {
+        padding: rb-rem-calc(20px);
+    }
 
     &.is-height-special {
         height: 90vh;
@@ -177,7 +188,7 @@
     }
 
     @media (max-width: 768px) {
-        padding-top: rb-rem-calc(70px);
+        padding-top: rb-rem-calc(50px);
     }
 
     &.is-pos-centered {
@@ -204,8 +215,11 @@
 }
 
 .page-footer-inner {
-    @include rb-fluid-type-range (padding-right, 20px, 50px, 414px, 2500px);
-    @include rb-fluid-type-range (padding-left, 20px, 50px, 414px, 2500px);
+    padding: rb-rem-calc(20px);
+
+    @include rb-respond-to((from:l)) {
+        padding: rb-rem-calc(30px);
+    }
 }
 
 
